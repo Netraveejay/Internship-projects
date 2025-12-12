@@ -1,0 +1,109 @@
+.tip-box,
+.hover-box,
+.event-tip {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark .highcharts-tooltip {
+  background: rgba(20,20,20,0.98) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.6) !important;
+}
+
+body.dark .highcharts-legend text,
+body.dark .highcharts-legend tspan {
+  fill: #e8e8e8 !important;
+}
+
+body.dark .highcharts-legend-box {
+  fill: transparent !important;
+}
+
+body.light .highcharts-tooltip {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.radar-chart-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.radar-shimmer {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    #ccc 0%,
+    #e0e0e0 20%,
+    #ccc 40%,
+    #ccc 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmerAnim 1.2s infinite linear;
+}
+
+.radar-shimmer.dark {
+  background: linear-gradient(
+    90deg,
+    #333 0%,
+    #555 20%,
+    #333 40%,
+    #333 100%
+  );
+}
+
+@keyframes shimmerAnim {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+
+.blank-page {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+.inline-error-box {
+ margin: 40px auto;
+  padding: 20px;
+  
+  background: #ffe4e6;
+  color: #b91c1c;
+  border: 1px solid #fecdd3;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 99, 132, 0.15);
+}
+
+/* dark mode style */
+.inline-error-box.dark {
+  background: #2e2e2e;     /* soft grey dark mode */
+  border-color: #555;
+ 
+}
+
+.inline-error-box button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.inline-error-box button:hover {
+  opacity: 0.85;
+}
+

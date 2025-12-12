@@ -1,0 +1,261 @@
+/* BODY THEMES */
+body.light {
+  background: #faf7ff;
+  color: #1b1b1b;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+
+/*        NAV BAR        */
+
+
+.navi-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Light/Dark Nav */
+body.light .navi-bar {
+  background: #ece9ff;
+  color: #4b3cc4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+body.dark .navi-bar {
+  background: #2a2a2a;
+  color: #c9c5ff;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.03);
+}
+
+.navi-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navi-btn {
+  padding: 8px 14px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 2px solid transparent;
+}
+
+/* Light/Dark Link Colors */
+body.light .navi-btn {
+  color: #4b3cc4;
+  background: transparent;
+  border-color: rgba(75,60,196,0.12);
+}
+
+body.dark .navi-btn {
+  color: #c9c5ff;
+  background: transparent;
+  border-color: rgba(201,197,255,0.06);
+}
+
+/* Active Link */
+body.light .navi-btn.active {
+  background: #6f42c1;
+  color: #ffffff !important;
+  border-color: transparent;
+}
+
+body.dark .navi-btn.active {
+  background: #6f42c1;
+  color: #ffffff !important;
+  border-color: transparent;
+}
+
+.navi-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* right-side controls wrapper (keeps toggle at top-right) */
+.navi-controls {
+  display: flex;
+  align-items: center;
+}
+/* WWE POWER SWITCH BUTTON 🔥 */
+.theme-toggle {
+  width: 110px;
+  height: 48px;
+  background: #555;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  transition: 0.28s ease;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  overflow: hidden;
+  font-weight: 700;
+  color: white;
+}
+
+/* Slider ball */
+.theme-toggle::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  transition: 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+}
+
+/* Text ON/OFF label */
+.theme-toggle::after {
+  content: "OFF";
+  position: absolute;
+  right: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.28s ease;
+}
+
+/* ---- LIGHT MODE (DEFAULT OFF STATE) ---- */
+body.light .theme-toggle {
+  background: #555;
+}
+
+body.light .theme-toggle::before {
+  left: 5px;
+}
+
+body.light .theme-toggle::after {
+  content: "OFF";
+  right: 15px;
+}
+
+/* ---- DARK MODE (ON STATE) ---- */
+body.dark .theme-toggle {
+  background: #ff1e1e; /* WWE RED */
+  box-shadow: 0 0 14px rgba(255, 0, 0, 0.7);
+}
+
+body.dark .theme-toggle::before {
+  left: 65px;
+  background: #ffe8e8;
+}
+
+body.dark .theme-toggle::after {
+  content: "ON";
+  left: 15px;
+  right: auto;
+}
+
+/* Hover effect */
+.theme-toggle:hover {
+  opacity: 0.92;
+}
+
+
+/*     PAGE CONTENT      */
+
+.page,
+.page-container {
+  padding: 20px;
+  min-height: calc(100vh - 70px);
+  transition: all 0.3s ease;
+}
+
+body.light .page,
+body.light .page-container {
+  background: #faf7ff;
+  color: #1b1b1b;
+}
+
+body.dark .page,
+body.dark .page-container {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+.theme-pill {
+  width: 160px;
+  height: 48px;
+  background: #e8e8e8;
+  border-radius: 40px;
+  border: 2px solid #d0d0d0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.pill-option {
+  width: 50%;
+  text-align: center;
+  z-index: 2;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+}
+
+/* Sliding highlight background */
+.theme-pill::before {
+  content: "";
+  width: 78px;
+  height: 40px;
+  background: white;
+  border-radius: 26px;
+  position: absolute;
+
+  left: 4px;
+  transition: 0.5s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ---------------- LIGHT MODE ---------------- */
+.theme-pill.light {
+  background: #ecebff;
+  border-color: #d9d7ff;
+  color: #4b3cc4;
+}
+
+.theme-pill.light::before {
+  left: 4px; /* Highlight on LIGHT side */
+}
+
+/* ---------------- DARK MODE ---------------- */
+.theme-pill.dark {
+  background: #2c2c2c;
+  border-color: #404040;
+  color:grey;
+}
+
+.theme-pill.dark::before {
+  left: 78px; /* Highlight slides to DARK side */
+  background-color:grey;
+}
+

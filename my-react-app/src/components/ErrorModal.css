@@ -1,0 +1,102 @@
+.error-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2000;
+}
+
+.error-modal {
+  width: 560px;
+  max-width: calc(100% - 32px);
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial;
+}
+
+.error-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ef5350 0%, #e53935 100%);
+  color: #fff;
+  padding: 14px 16px;
+}
+
+.error-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.error-modal-x {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.error-modal-body {
+  padding: 18px 20px;
+  color:black;
+  background: white;
+}
+
+.error-modal-body p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.error-modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 14px 20px;
+ 
+}
+
+.error-btn-cancel {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error-btn-reload {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Dark support when body.dark is active */
+body.dark .error-modal {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .error-modal-body {
+  background:#333;
+  color: #f5d6d6;
+}
+
+body.dark .error-btn-cancel {
+  background:black;
+  color: #ddd;
+}
+
+body.dark .error-btn-reload {
+  background: #b00020;
+}
+body.dark .error-modal-actions{
+    background:#333;
+}

@@ -1,0 +1,14 @@
+[
+  { "co_code": "INFY", "company_name": "Infosys Ltd", "mcap": 620000 },
+  { "co_code": "TCS", "company_name": "Tata Consultancy Services", "mcap": 1350000 },
+  { "co_code": "WIPRO", "company_name": "Wipro Ltd", "mcap": 210000 },
+  { "co_code": "HCLT", "company_name": "HCL Technologies", "mcap": 350000 },
+  { "co_code": "TECHM", "company_name": "Tech Mahindra", "mcap": 165000 },
+  { "co_code": "LTIM", "company_name": "LTIMindtree", "mcap": 285000 },
+  { "co_code": "PERSIST", "company_name": "Persistent Systems", "mcap": 82000 },
+  { "co_code": "MPHASIS", "company_name": "Mphasis Ltd", "mcap": 38000 },
+  { "co_code": "COFORGE", "company_name": "Coforge Ltd", "mcap": 45000 },
+  { "co_code": "SONATAS", "company_name": "Sonata Software", "mcap": 22000 },
+  { "co_code": "KPIT", "company_name": "KPIT Technologies", "mcap": 60000 },
+  { "co_code": "TANLA", "company_name": "Tanla Platforms", "mcap": 18000 }
+]

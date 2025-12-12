@@ -1,0 +1,31 @@
+{
+  "data": [
+    {"company_code":"C101","date":"2020-06-10","category":"dividend","divamt":5,"note":"C101 declared ₹5 dividend"},
+    {"company_code":"C101","date":"2022-12-20","category":"split","splitval":"2:1","note":"C101 did 2-for-1 split"},
+    {"company_code":"C101","date":"2024-05-22","category":"result","note":"C101 Q1 results"},
+
+    {"company_code":"C102","date":"2021-07-20","category":"result","note":"C102 Q2 results"},
+    {"company_code":"C102","date":"2024-08-25","category":"dividend","divamt":3,"note":"C102 declared ₹3 dividend"},
+    {"company_code":"C102","date":"2025-02-14","category":"split","splitval":"3:1","note":"C102 did 3-for-1 split"},
+
+    {"company_code":"C103","date":"2020-05-18","category":"dividend","divamt":8,"note":"C103 declared ₹8 dividend"},
+    {"company_code":"C103","date":"2022-11-10","category":"split","splitval":"2:1","note":"C103 did 2-for-1 split"},
+    {"company_code":"C103","date":"2025-03-28","category":"result","note":"C103 Q4 results"},
+
+    {"company_code":"C104","date":"2021-10-18","category":"dividend","divamt":2,"note":"C104 declared ₹2 dividend"},
+    {"company_code":"C104","date":"2024-11-10","category":"split","splitval":"5:2","note":"C104 did 5-for-2 split"},
+    {"company_code":"C104","date":"2025-04-20","category":"result","note":"C104 Q1 results"},
+
+    {"company_code":"C105","date":"2020-06-05","category":"dividend","divamt":6,"note":"C105 declared ₹6 dividend"},
+    {"company_code":"C105","date":"2022-11-25","category":"split","splitval":"3:2","note":"C105 did 3-for-2 split"},
+    {"company_code":"C105","date":"2024-08-18","category":"result","note":"C105 Q3 results"},
+
+    {"company_code":"C106","date":"2021-08-10","category":"result","note":"C106 Q2 results"},
+    {"company_code":"C106","date":"2023-06-15","category":"dividend","divamt":4,"note":"C106 declared ₹4 dividend"},
+    {"company_code":"C106","date":"2025-03-18","category":"split","splitval":"2:1","note":"C106 did 2-for-1 split"},
+
+    {"company_code":"C107","date":"2020-07-15","category":"dividend","divamt":10,"note":"C107 declared ₹10 dividend"},
+    {"company_code":"C107","date":"2022-12-30","category":"split","splitval":"2:1","note":"C107 did 2-for-1 split"},
+    {"company_code":"C107","date":"2024-11-25","category":"result","note":"C107 Q4 results"}
+  ]
+}

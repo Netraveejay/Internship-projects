@@ -1,0 +1,59 @@
+{
+  "data": [
+    {"company_code":"C101","date":"2019-03-15","price":50.5},
+    {"company_code":"C101","date":"2020-06-10","price":60.0},
+    {"company_code":"C101","date":"2021-09-05","price":70.25},
+    {"company_code":"C101","date":"2022-12-20","price":85.0},
+    {"company_code":"C101","date":"2023-07-18","price":95.0},
+    {"company_code":"C101","date":"2024-05-22","price":110.0},
+    {"company_code":"C101","date":"2025-03-30","price":125.5},
+
+    {"company_code":"C102","date":"2019-01-12","price":40.0},
+    {"company_code":"C102","date":"2020-04-15","price":45.5},
+    {"company_code":"C102","date":"2021-07-20","price":50.0},
+    {"company_code":"C102","date":"2022-10-18","price":55.5},
+    {"company_code":"C102","date":"2023-06-12","price":60.0},
+    {"company_code":"C102","date":"2024-08-25","price":65.5},
+    {"company_code":"C102","date":"2025-02-14","price":70.0},
+
+    {"company_code":"C103","date":"2019-02-20","price":70.0},
+    {"company_code":"C103","date":"2020-05-18","price":75.5},
+    {"company_code":"C103","date":"2021-08-22","price":80.0},
+    {"company_code":"C103","date":"2022-11-10","price":85.5},
+    {"company_code":"C103","date":"2023-07-05","price":90.0},
+    {"company_code":"C103","date":"2024-09-15","price":95.5},
+    {"company_code":"C103","date":"2025-03-28","price":100.0},
+
+    {"company_code":"C104","date":"2019-03-25","price":30.0},
+    {"company_code":"C104","date":"2020-07-12","price":35.0},
+    {"company_code":"C104","date":"2021-10-18","price":40.0},
+    {"company_code":"C104","date":"2022-12-22","price":45.0},
+    {"company_code":"C104","date":"2023-08-05","price":50.0},
+    {"company_code":"C104","date":"2024-11-10","price":55.0},
+    {"company_code":"C104","date":"2025-04-20","price":60.0},
+
+    {"company_code":"C105","date":"2019-01-30","price":90.0},
+    {"company_code":"C105","date":"2020-06-05","price":95.0},
+    {"company_code":"C105","date":"2021-09-15","price":100.0},
+    {"company_code":"C105","date":"2022-11-25","price":105.0},
+    {"company_code":"C105","date":"2023-07-30","price":110.0},
+    {"company_code":"C105","date":"2024-08-18","price":115.0},
+    {"company_code":"C105","date":"2025-02-12","price":120.0},
+
+    {"company_code":"C106","date":"2019-02-15","price":55.0},
+    {"company_code":"C106","date":"2020-05-20","price":60.0},
+    {"company_code":"C106","date":"2021-08-10","price":65.0},
+    {"company_code":"C106","date":"2022-11-05","price":70.0},
+    {"company_code":"C106","date":"2023-06-15","price":75.0},
+    {"company_code":"C106","date":"2024-09-12","price":80.0},
+    {"company_code":"C106","date":"2025-03-18","price":85.0},
+
+    {"company_code":"C107","date":"2019-03-05","price":120.0},
+    {"company_code":"C107","date":"2020-07-15","price":125.0},
+    {"company_code":"C107","date":"2021-10-20","price":130.0},
+    {"company_code":"C107","date":"2022-12-30","price":135.0},
+    {"company_code":"C107","date":"2023-08-12","price":140.0},
+    {"company_code":"C107","date":"2024-11-25","price":145.0},
+    {"company_code":"C107","date":"2025-04-05","price":150.0}
+  ]
+}
