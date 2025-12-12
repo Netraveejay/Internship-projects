@@ -46,12 +46,10 @@ function CustomCalendar() {
   const handleDayClick = (date) => setValue(date);
 
   const tileContent = ({ date }) => {
-    const key =
-      String(date.getFullYear()) +
-      "-" +
-      String(date.getMonth() + 1).padStart(2, "0") +
-      "-" +
-      String(date.getDate()).padStart(2, "0");
+    const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+      2,
+      "0"
+    )}-${String(date.getDate()).padStart(2, "0")}`;
 
     const events = eventsByDate[key] || [];
     if (!events.length) return null;
@@ -70,17 +68,17 @@ function CustomCalendar() {
             n > 0 && (
               <li
                 key={cat}
-                className={
+                className={`event-pill ${
                   cat === "dividend"
                     ? "pill-dividend"
                     : cat === "split"
                     ? "pill-split"
                     : "pill-default"
-                }
-                title={cat + " (" + n + ")"}
+                }`}
+                title={`${cat} (${n})`}
                 onClick={() => handlePillClick(key, cat)}
               >
-                {cat.charAt(0).toUpperCase() + cat.slice(1) + "(" + n + ")"}
+                {cat.charAt(0).toUpperCase() + cat.slice(1)}({n})
               </li>
             )
         )}
@@ -116,19 +114,19 @@ function CustomCalendar() {
   const years = Array.from({ length: 16 }, (_, i) => 2010 + i);
 
   const allTimelineEvents = useMemo(() => {
-    return Object.entries(eventsByDate).map(function ([date, events]) {
+    return Object.entries(eventsByDate).map(([date, events]) => {
       const d = new Date(date);
       const key = d.toISOString().split("T")[0];
-      return { date: key, events: events };
+      return { date: key, events };
     });
   }, [eventsByDate]);
 
   const handlePillClick = (date, category) => {
-    const events = (eventsByDate[date] || []).filter(function (e) {
-      return category === "result"
+    const events = (eventsByDate[date] || []).filter((e) =>
+      category === "result"
         ? !e.category || e.category === "result"
-        : e.category === category;
-    });
+        : e.category === category
+    );
     setSelectedDate(date);
     setSelectedCategory(category);
     setPopupEvents(events);
@@ -158,7 +156,7 @@ function CustomCalendar() {
     const itemRefs = useRef({});
 
     useEffect(() => {
-      const firstEventKey = allTimelineEvents.find(function (ev) {
+      const firstEventKey = allTimelineEvents.find((ev) => {
         const d = new Date(ev.date);
         return d.getMonth() === activeMonth && d.getFullYear() === activeYear;
       })?.date;
@@ -174,91 +172,79 @@ function CustomCalendar() {
     return (
       <div className="cal-tl-wrapper">
         <div style={{ margin: "10px 100px", display: "flex", gap: "8px" }}>
-          {["all", "dividend", "split", "result"].map(function (cat) {
-            return (
-              <button
-                key={cat}
-                onClick={function () {
-                  setTimelineFilter(cat);
-                }}
-                style={{
-                  padding: "6px 12px",
-                  borderRadius: "8px",
-                  border:
-                    timelineFilter === cat
-                      ? "2px solid #6366f1"
-                      : "1px solid #ccc",
-                  background: timelineFilter === cat ? "#6366f1" : "#f3ebff",
-                  color: timelineFilter === cat ? "#fff" : "#1d1d27",
-                  cursor: "pointer",
-                  fontWeight: "600",
-                  fontSize: "13px",
-                  transition: "0.2s",
-                }}
-              >
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            );
-          })}
+          {["all", "dividend", "split", "result"].map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setTimelineFilter(cat)}
+              style={{
+                padding: "6px 12px",
+                borderRadius: "8px",
+                border:
+                  timelineFilter === cat
+                    ? "2px solid #6366f1"
+                    : "1px solid #ccc",
+                background: timelineFilter === cat ? "#6366f1" : "#f3ebff",
+                color: timelineFilter === cat ? "#fff" : "#1d1d27",
+                cursor: "pointer",
+                fontWeight: "600",
+                fontSize: "13px",
+                transition: "0.2s",
+              }}
+            >
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </button>
+          ))}
         </div>
         <div className="cal-tl-line">
           {allTimelineEvents
-            .filter(function (ev) {
+            .filter((ev) => {
               if (timelineFilter === "all") return true;
-              const filteredEvents = ev.events.filter(function (e) {
-                return timelineFilter === "default"
+              const filteredEvents = ev.events.filter((e) =>
+                timelineFilter === "default"
                   ? !e.category || e.category === "result"
-                  : e.category === timelineFilter;
-              });
+                  : e.category === timelineFilter
+              );
               return filteredEvents.length > 0;
             })
-            .map(function (ev, i) {
+            .map((ev, i) => {
               const d = new Date(ev.date);
-              const formattedDate =
-                String(d.getDate()).padStart(2, "0") +
-                "-" +
-                monthNames[d.getMonth()] +
-                "-" +
-                d.getFullYear();
+              const formattedDate = `${String(d.getDate()).padStart(2, "0")}-${
+                monthNames[d.getMonth()]
+              }-${d.getFullYear()}`;
               const sideClass = i % 2 === 0 ? "cal-left" : "cal-right";
 
               const filteredEvents =
                 timelineFilter === "all"
                   ? ev.events
-                  : ev.events.filter(function (e) {
-                      return timelineFilter === "default"
+                  : ev.events.filter((e) =>
+                      timelineFilter === "default"
                         ? !e.category || e.category === "result"
-                        : e.category === timelineFilter;
-                    });
+                        : e.category === timelineFilter
+                    );
 
               const count = {
-                dividend: filteredEvents.filter(function (e) {
-                  return e.category === "dividend";
-                }).length,
-                split: filteredEvents.filter(function (e) {
-                  return e.category === "split";
-                }).length,
-                result: filteredEvents.filter(function (e) {
-                  return !e.category || e.category === "result";
-                }).length,
+                dividend: filteredEvents.filter(
+                  (e) => e.category === "dividend"
+                ).length,
+                split: filteredEvents.filter((e) => e.category === "split")
+                  .length,
+                result: filteredEvents.filter(
+                  (e) => !e.category || e.category === "result"
+                ).length,
               };
 
               return (
                 <div
                   key={i}
-                  ref={function (el) {
-                    itemRefs.current[ev.date] = el;
-                  }}
-                  className={
-                    "cal-tl-item " +
-                    sideClass +
-                    " " +
-                    (d.getMonth() === activeMonth &&
+                  ref={(el) => (itemRefs.current[ev.date] = el)}
+                  className={`cal-tl-item ${sideClass} ${
+                    d.getMonth() === activeMonth &&
                     d.getFullYear() === activeYear
                       ? "highlight-month"
-                      : "")
-                  }
-                  onClick={function () {
+                      : ""
+                  }`}
+                  onClick={() => {
+                    // 📌 CLICK BOX NAVIGATES CALENDAR
                     setValue(d);
                     setActiveStartDate(
                       new Date(d.getFullYear(), d.getMonth(), 1)
@@ -278,31 +264,27 @@ function CustomCalendar() {
                   ></div>
                   <div className="cal-tl-box">
                     <div className="cal-tl-date">{formattedDate}</div>
-                    {Object.entries(count).map(function ([cat, n]) {
-                      if (n <= 0) return null;
-                      return (
-                        <div
-                          key={cat}
-                          className={
-                            cat === "dividend"
-                              ? "cal-chip-dividend"
-                              : cat === "split"
-                              ? "cal-chip-split"
-                              : "cal-chip-default"
-                          }
-                          onClick={function (e) {
-                            e.stopPropagation();
-                            handlePillClick(ev.date, cat);
-                          }}
-                        >
-                          {cat.charAt(0).toUpperCase() +
-                            cat.slice(1) +
-                            "(" +
-                            n +
-                            ")"}
-                        </div>
-                      );
-                    })}
+                    {Object.entries(count).map(
+                      ([cat, n]) =>
+                        n > 0 && (
+                          <div
+                            key={cat}
+                            className={`cal-tl-chip ${
+                              cat === "dividend"
+                                ? "cal-chip-dividend"
+                                : cat === "split"
+                                ? "cal-chip-split"
+                                : "cal-chip-default"
+                            }`}
+                            onClick={(e) => {
+                              e.stopPropagation(); // prevent box click
+                              handlePillClick(ev.date, cat);
+                            }}
+                          >
+                            {cat.charAt(0).toUpperCase() + cat.slice(1)}({n})
+                          </div>
+                        )
+                    )}
                   </div>
                 </div>
               );
@@ -356,9 +338,7 @@ function CustomCalendar() {
           <CustomSelect
             options={years.map(String)}
             valueIndex={years.indexOf(currentYear)}
-            onChangeIndex={function (idx) {
-              changeYear(years[idx]);
-            }}
+            onChangeIndex={(idx) => changeYear(years[idx])}
           />
         </div>
         <button className="nav-btn" onClick={nextMonth}>
@@ -368,18 +348,16 @@ function CustomCalendar() {
 
       <button
         className="fullscreen-btn"
-        onClick={function () {
-          setFullscreenTimeline(true);
-        }}
+        onClick={() => setFullscreenTimeline(true)}
       >
         ⛶
       </button>
 
       {isLoading ? (
         <div className="calendar-shimmer">
-          {Array.from({ length: 42 }).map(function (_, i) {
-            return <div key={i} className="calendar-shimmer-tile" />;
-          })}
+          {Array.from({ length: 42 }).map((_, i) => (
+            <div key={i} className="calendar-shimmer-tile" />
+          ))}
         </div>
       ) : (
         <div style={{ display: "flex", gap: "24px", alignItems: "flex-start" }}>
@@ -387,9 +365,9 @@ function CustomCalendar() {
             onClickDay={handleDayClick}
             value={value}
             activeStartDate={activeStartDate}
-            onActiveStartDateChange={function ({ activeStartDate }) {
-              setActiveStartDate(activeStartDate);
-            }}
+            onActiveStartDateChange={({ activeStartDate }) =>
+              setActiveStartDate(activeStartDate)
+            }
             tileContent={tileContent}
             tileClassName={tileClassName}
             prevLabel={null}
@@ -405,16 +383,12 @@ function CustomCalendar() {
         <>
           <div
             className="fullscreen-blur-bg"
-            onClick={function () {
-              setFullscreenTimeline(false);
-            }}
+            onClick={() => setFullscreenTimeline(false)}
           ></div>
           <div className="fullscreen-timeline">
             <button
               className="close-fullscreen-btn"
-              onClick={function () {
-                setFullscreenTimeline(false);
-              }}
+              onClick={() => setFullscreenTimeline(false)}
             >
               ✖
             </button>
@@ -425,23 +399,16 @@ function CustomCalendar() {
 
       {selectedDate && popupEvents.length > 0 && (
         <div className="popup-overlay" onClick={closePopup}>
-          <div
-            className="popup-box"
-            onClick={function (e) {
-              e.stopPropagation();
-            }}
-          >
+          <div className="popup-box" onClick={(e) => e.stopPropagation()}>
             <h3>
               Events on {selectedDate} ({selectedCategory})
             </h3>
             <ul className="popup-event-list">
-              {popupEvents.map(function (ev, i) {
-                return (
-                  <li key={i}>
-                    <div>{ev.note || "No note"}</div>
-                  </li>
-                );
-              })}
+              {popupEvents.map((ev, i) => (
+                <li key={i}>
+                  <div>{ev.note || "No note"}</div>
+                </li>
+              ))}
             </ul>
             <button className="close-btn" onClick={closePopup}>
               Close
