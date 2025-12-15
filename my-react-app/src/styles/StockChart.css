@@ -59,11 +59,15 @@
 
 /* ===== COMPANY SELECTOR ===== */
 .company-selector {
-  margin-bottom: 20px;
+  
   display: flex;
- 
-  gap: 60%;
+  gap: 20%;
 }
+.dropdown-list {
+  will-change: transform;
+  overscroll-behavior: contain;
+}
+
 
 .selector-label {
   color: var(--text);

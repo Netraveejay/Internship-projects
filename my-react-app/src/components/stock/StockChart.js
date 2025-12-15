@@ -5,8 +5,8 @@ import "highcharts/modules/annotations";
 import "../../styles/StockChart.css";
 import "../../styles/RadarChart.css";
 
-import stockPricesData from "../../data/data (6).json";
-import annotationsData from "../../data/data (5).json";
+import stockPricesData from "../../data/data_stockPrices.json";
+import annotationsData from "../../data/data_annotations.json";
 
 const StockChart = function (theme) {
   if (theme === undefined) theme = "light";
@@ -86,7 +86,7 @@ const StockChart = function (theme) {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [visibleStart, setVisibleStart] = useState(0);
-  var visibleCount = 5;
+  var visibleCount = 10;
   var itemHeight = 30;
   const dropdownRef = useRef(null);
 
@@ -249,7 +249,6 @@ const StockChart = function (theme) {
       type: "datetime",
       labels: {
         style: { color: "var(--chart-text)", fontSize: "11px" },
-        format: "{value:%Y}",
       },
       lineColor: "var(--chart-grid)",
       tickColor: "var(--chart-grid)",
@@ -371,6 +370,7 @@ const StockChart = function (theme) {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  color: "var(--ann-text-color)",
                 }}
               >
                 {selectedCompany === "all"
@@ -402,57 +402,72 @@ const StockChart = function (theme) {
                       position: "relative",
                     }}
                   >
-                    <div
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        height: itemHeight + "px",
-                        lineHeight: itemHeight + "px",
-                        padding: "0 8px",
-                        cursor: "pointer",
-                        background:
-                          selectedCompany === "all"
-                            ? "var(--chart-highlight)"
-                            : "transparent",
-                      }}
-                      onClick={function () {
-                        setSelectedCompany("all");
-                        setDropdownOpen(false);
-                      }}
-                    >
-                      All
-                    </div>
-                    {companies
+                    {/* "All" item is now part of the virtualized list */}
+                    {["all", ...companies]
                       .slice(visibleStart, visibleStart + visibleCount)
-                      .map(function (code, index) {
+                      .map((code, index) => {
+                        const isAll = code === "all";
+                        const displayCode = isAll ? "All" : code;
+                        const topPosition = (visibleStart + index) * itemHeight;
+
                         return (
                           <div
                             key={code}
                             style={{
                               position: "absolute",
-                              top:
-                                (visibleStart + index + 1) * itemHeight + "px",
+                              top: topPosition + "px",
                               height: itemHeight + "px",
                               lineHeight: itemHeight + "px",
                               padding: "0 8px",
                               cursor: "pointer",
                               background:
-                                selectedCompany === code
+                                (isAll && selectedCompany === "all") ||
+                                (!isAll && selectedCompany === code)
                                   ? "var(--chart-highlight)"
                                   : "transparent",
                             }}
-                            onClick={function () {
-                              setSelectedCompany(code);
+                            onClick={() => {
+                              setSelectedCompany(isAll ? "all" : code);
                               setDropdownOpen(false);
                             }}
                           >
-                            {code}
+                            {displayCode}
                           </div>
                         );
                       })}
                   </div>
                 </div>
               )}
+            </div>
+            <div
+              className="normal-dropdown-container"
+              style={{
+                position: "relative",
+                width: "200px",
+                marginLeft: "20px",
+              }} // added margin to sit beside the first dropdown
+            >
+              <select
+                className="normal-dropdown-select"
+                value={selectedCompany}
+                onChange={(e) => setSelectedCompany(e.target.value)}
+                style={{
+                  width: "100%",
+                  padding: "6px 8px",
+                  borderRadius: "4px",
+                  border: "1px solid var(--chart-grid)",
+                  backgroundColor: "var(--chart-bg)",
+                  cursor: "pointer",
+                  color: "var(--ann-text-color)",
+                }}
+              >
+                <option value="all">Choose a Company</option>
+                {companies.map((code) => (
+                  <option key={code} value={code}>
+                    {code}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 

@@ -1,0 +1,2504 @@
+{
+  "data": [
+    {
+      "company_code": "C101",
+      "date": "2021-03-25",
+      "price": 142.58
+    },
+    {
+      "company_code": "C101",
+      "date": "2021-06-08",
+      "price": 115.89
+    },
+    {
+      "company_code": "C101",
+      "date": "2020-06-12",
+      "price": 60.31
+    },
+    {
+      "company_code": "C101",
+      "date": "2022-11-07",
+      "price": 147.53
+    },
+    {
+      "company_code": "C101",
+      "date": "2023-12-28",
+      "price": 139.66
+    },
+    {
+      "company_code": "C102",
+      "date": "2022-02-14",
+      "price": 128.23
+    },
+    {
+      "company_code": "C102",
+      "date": "2020-05-15",
+      "price": 105.42
+    },
+    {
+      "company_code": "C102",
+      "date": "2023-07-11",
+      "price": 120.87
+    },
+    {
+      "company_code": "C102",
+      "date": "2023-11-21",
+      "price": 142.33
+    },
+    {
+      "company_code": "C102",
+      "date": "2020-04-14",
+      "price": 94.85
+    },
+    {
+      "company_code": "C103",
+      "date": "2022-11-28",
+      "price": 119.27
+    },
+    {
+      "company_code": "C103",
+      "date": "2020-11-05",
+      "price": 85.52
+    },
+    {
+      "company_code": "C103",
+      "date": "2020-09-19",
+      "price": 129.8
+    },
+    {
+      "company_code": "C103",
+      "date": "2022-02-01",
+      "price": 120.51
+    },
+    {
+      "company_code": "C103",
+      "date": "2020-09-21",
+      "price": 141.37
+    },
+    {
+      "company_code": "C104",
+      "date": "2022-03-28",
+      "price": 130.36
+    },
+    {
+      "company_code": "C104",
+      "date": "2022-06-28",
+      "price": 80.58
+    },
+    {
+      "company_code": "C104",
+      "date": "2020-02-24",
+      "price": 133.2
+    },
+    {
+      "company_code": "C104",
+      "date": "2021-12-10",
+      "price": 123.14
+    },
+    {
+      "company_code": "C104",
+      "date": "2022-07-09",
+      "price": 64.66
+    },
+    {
+      "company_code": "C105",
+      "date": "2023-11-04",
+      "price": 119.12
+    },
+    {
+      "company_code": "C105",
+      "date": "2021-01-22",
+      "price": 133
+    },
+    {
+      "company_code": "C105",
+      "date": "2023-09-16",
+      "price": 58.86
+    },
+    {
+      "company_code": "C105",
+      "date": "2021-02-28",
+      "price": 99.8
+    },
+    {
+      "company_code": "C105",
+      "date": "2023-09-18",
+      "price": 59.91
+    },
+    {
+      "company_code": "C106",
+      "date": "2023-12-15",
+      "price": 74.47
+    },
+    {
+      "company_code": "C106",
+      "date": "2021-07-26",
+      "price": 56.93
+    },
+    {
+      "company_code": "C106",
+      "date": "2023-10-02",
+      "price": 142.67
+    },
+    {
+      "company_code": "C106",
+      "date": "2022-07-19",
+      "price": 73.59
+    },
+    {
+      "company_code": "C106",
+      "date": "2023-11-06",
+      "price": 93.57
+    },
+    {
+      "company_code": "C107",
+      "date": "2021-09-17",
+      "price": 112.3
+    },
+    {
+      "company_code": "C107",
+      "date": "2022-02-12",
+      "price": 62.61
+    },
+    {
+      "company_code": "C107",
+      "date": "2020-07-04",
+      "price": 71.7
+    },
+    {
+      "company_code": "C107",
+      "date": "2021-09-12",
+      "price": 77.48
+    },
+    {
+      "company_code": "C107",
+      "date": "2020-02-04",
+      "price": 111.1
+    },
+    {
+      "company_code": "C108",
+      "date": "2020-01-25",
+      "price": 93.19
+    },
+    {
+      "company_code": "C108",
+      "date": "2020-12-01",
+      "price": 114.66
+    },
+    {
+      "company_code": "C108",
+      "date": "2023-02-15",
+      "price": 136.91
+    },
+    {
+      "company_code": "C108",
+      "date": "2023-11-02",
+      "price": 88.39
+    },
+    {
+      "company_code": "C108",
+      "date": "2020-11-25",
+      "price": 82.17
+    },
+    {
+      "company_code": "C109",
+      "date": "2023-11-27",
+      "price": 79.69
+    },
+    {
+      "company_code": "C109",
+      "date": "2020-11-04",
+      "price": 128.98
+    },
+    {
+      "company_code": "C109",
+      "date": "2020-09-26",
+      "price": 135.33
+    },
+    {
+      "company_code": "C109",
+      "date": "2022-11-23",
+      "price": 70.48
+    },
+    {
+      "company_code": "C109",
+      "date": "2022-06-03",
+      "price": 57.59
+    },
+    {
+      "company_code": "C110",
+      "date": "2023-04-22",
+      "price": 95.79
+    },
+    {
+      "company_code": "C110",
+      "date": "2023-03-05",
+      "price": 66.42
+    },
+    {
+      "company_code": "C110",
+      "date": "2023-09-22",
+      "price": 100.53
+    },
+    {
+      "company_code": "C110",
+      "date": "2021-06-22",
+      "price": 110.11
+    },
+    {
+      "company_code": "C110",
+      "date": "2022-12-02",
+      "price": 111.22
+    },
+    {
+      "company_code": "C111",
+      "date": "2020-03-21",
+      "price": 129.82
+    },
+    {
+      "company_code": "C111",
+      "date": "2021-02-14",
+      "price": 96.01
+    },
+    {
+      "company_code": "C111",
+      "date": "2023-06-12",
+      "price": 112.04
+    },
+    {
+      "company_code": "C111",
+      "date": "2020-02-08",
+      "price": 132.95
+    },
+    {
+      "company_code": "C111",
+      "date": "2020-01-03",
+      "price": 79.59
+    },
+    {
+      "company_code": "C112",
+      "date": "2022-02-26",
+      "price": 135.59
+    },
+    {
+      "company_code": "C112",
+      "date": "2020-06-27",
+      "price": 86.44
+    },
+    {
+      "company_code": "C112",
+      "date": "2020-01-17",
+      "price": 114.91
+    },
+    {
+      "company_code": "C112",
+      "date": "2020-11-08",
+      "price": 64.72
+    },
+    {
+      "company_code": "C112",
+      "date": "2021-05-18",
+      "price": 145.97
+    },
+    {
+      "company_code": "C113",
+      "date": "2022-05-16",
+      "price": 99.13
+    },
+    {
+      "company_code": "C113",
+      "date": "2022-06-05",
+      "price": 127.53
+    },
+    {
+      "company_code": "C113",
+      "date": "2022-05-06",
+      "price": 145.34
+    },
+    {
+      "company_code": "C113",
+      "date": "2023-02-13",
+      "price": 139.23
+    },
+    {
+      "company_code": "C113",
+      "date": "2023-03-01",
+      "price": 92.86
+    },
+    {
+      "company_code": "C114",
+      "date": "2021-06-23",
+      "price": 56.11
+    },
+    {
+      "company_code": "C114",
+      "date": "2022-06-27",
+      "price": 78.44
+    },
+    {
+      "company_code": "C114",
+      "date": "2023-08-07",
+      "price": 136.86
+    },
+    {
+      "company_code": "C114",
+      "date": "2023-01-20",
+      "price": 80.23
+    },
+    {
+      "company_code": "C114",
+      "date": "2021-06-25",
+      "price": 62.73
+    },
+    {
+      "company_code": "C115",
+      "date": "2020-12-26",
+      "price": 66.56
+    },
+    {
+      "company_code": "C115",
+      "date": "2021-09-15",
+      "price": 132.66
+    },
+    {
+      "company_code": "C115",
+      "date": "2022-10-10",
+      "price": 122.79
+    },
+    {
+      "company_code": "C115",
+      "date": "2021-10-15",
+      "price": 79.26
+    },
+    {
+      "company_code": "C115",
+      "date": "2021-12-08",
+      "price": 82.27
+    },
+    {
+      "company_code": "C116",
+      "date": "2023-03-17",
+      "price": 64.32
+    },
+    {
+      "company_code": "C116",
+      "date": "2023-10-13",
+      "price": 51.74
+    },
+    {
+      "company_code": "C116",
+      "date": "2020-08-07",
+      "price": 70.34
+    },
+    {
+      "company_code": "C116",
+      "date": "2021-08-25",
+      "price": 136.19
+    },
+    {
+      "company_code": "C116",
+      "date": "2023-05-22",
+      "price": 110.92
+    },
+    {
+      "company_code": "C117",
+      "date": "2023-03-14",
+      "price": 145.09
+    },
+    {
+      "company_code": "C117",
+      "date": "2023-09-04",
+      "price": 127.81
+    },
+    {
+      "company_code": "C117",
+      "date": "2023-07-12",
+      "price": 145.25
+    },
+    {
+      "company_code": "C117",
+      "date": "2023-04-12",
+      "price": 63.74
+    },
+    {
+      "company_code": "C117",
+      "date": "2021-05-21",
+      "price": 101.07
+    },
+    {
+      "company_code": "C118",
+      "date": "2020-05-14",
+      "price": 139.8
+    },
+    {
+      "company_code": "C118",
+      "date": "2021-08-03",
+      "price": 104.7
+    },
+    {
+      "company_code": "C118",
+      "date": "2020-08-28",
+      "price": 59.54
+    },
+    {
+      "company_code": "C118",
+      "date": "2022-02-22",
+      "price": 142.26
+    },
+    {
+      "company_code": "C118",
+      "date": "2023-10-09",
+      "price": 91.57
+    },
+    {
+      "company_code": "C119",
+      "date": "2023-08-21",
+      "price": 85.98
+    },
+    {
+      "company_code": "C119",
+      "date": "2020-10-28",
+      "price": 73.06
+    },
+    {
+      "company_code": "C119",
+      "date": "2023-10-22",
+      "price": 143.13
+    },
+    {
+      "company_code": "C119",
+      "date": "2023-04-05",
+      "price": 144.12
+    },
+    {
+      "company_code": "C119",
+      "date": "2021-07-05",
+      "price": 108.57
+    },
+    {
+      "company_code": "C120",
+      "date": "2023-04-05",
+      "price": 126.79
+    },
+    {
+      "company_code": "C120",
+      "date": "2021-02-07",
+      "price": 94.42
+    },
+    {
+      "company_code": "C120",
+      "date": "2020-09-03",
+      "price": 128.88
+    },
+    {
+      "company_code": "C120",
+      "date": "2022-10-09",
+      "price": 127.53
+    },
+    {
+      "company_code": "C120",
+      "date": "2023-01-04",
+      "price": 122.36
+    },
+    {
+      "company_code": "C121",
+      "date": "2020-10-12",
+      "price": 100.08
+    },
+    {
+      "company_code": "C121",
+      "date": "2021-08-01",
+      "price": 67.85
+    },
+    {
+      "company_code": "C121",
+      "date": "2020-03-05",
+      "price": 133.9
+    },
+    {
+      "company_code": "C121",
+      "date": "2021-09-08",
+      "price": 52.38
+    },
+    {
+      "company_code": "C121",
+      "date": "2020-09-16",
+      "price": 56.75
+    },
+    {
+      "company_code": "C122",
+      "date": "2020-01-10",
+      "price": 64.3
+    },
+    {
+      "company_code": "C122",
+      "date": "2022-02-14",
+      "price": 118.04
+    },
+    {
+      "company_code": "C122",
+      "date": "2021-10-06",
+      "price": 98.59
+    },
+    {
+      "company_code": "C122",
+      "date": "2021-12-17",
+      "price": 70.14
+    },
+    {
+      "company_code": "C122",
+      "date": "2021-08-08",
+      "price": 62.83
+    },
+    {
+      "company_code": "C123",
+      "date": "2022-11-16",
+      "price": 132.22
+    },
+    {
+      "company_code": "C123",
+      "date": "2021-05-21",
+      "price": 147.53
+    },
+    {
+      "company_code": "C123",
+      "date": "2023-02-15",
+      "price": 139.94
+    },
+    {
+      "company_code": "C123",
+      "date": "2020-01-27",
+      "price": 149.22
+    },
+    {
+      "company_code": "C123",
+      "date": "2021-07-23",
+      "price": 126.83
+    },
+    {
+      "company_code": "C124",
+      "date": "2022-04-16",
+      "price": 52.24
+    },
+    {
+      "company_code": "C124",
+      "date": "2020-08-28",
+      "price": 56.02
+    },
+    {
+      "company_code": "C124",
+      "date": "2023-06-20",
+      "price": 105.77
+    },
+    {
+      "company_code": "C124",
+      "date": "2022-09-27",
+      "price": 62.29
+    },
+    {
+      "company_code": "C124",
+      "date": "2020-05-19",
+      "price": 84.45
+    },
+    {
+      "company_code": "C125",
+      "date": "2022-10-15",
+      "price": 61.26
+    },
+    {
+      "company_code": "C125",
+      "date": "2023-01-18",
+      "price": 94.25
+    },
+    {
+      "company_code": "C125",
+      "date": "2020-01-17",
+      "price": 119.12
+    },
+    {
+      "company_code": "C125",
+      "date": "2020-02-10",
+      "price": 130.74
+    },
+    {
+      "company_code": "C125",
+      "date": "2020-02-17",
+      "price": 87.03
+    },
+    {
+      "company_code": "C126",
+      "date": "2022-04-08",
+      "price": 125.06
+    },
+    {
+      "company_code": "C126",
+      "date": "2020-06-14",
+      "price": 73.41
+    },
+    {
+      "company_code": "C126",
+      "date": "2020-01-05",
+      "price": 60.32
+    },
+    {
+      "company_code": "C126",
+      "date": "2022-01-17",
+      "price": 129.6
+    },
+    {
+      "company_code": "C126",
+      "date": "2020-09-02",
+      "price": 61.18
+    },
+    {
+      "company_code": "C127",
+      "date": "2020-11-25",
+      "price": 138.99
+    },
+    {
+      "company_code": "C127",
+      "date": "2020-01-21",
+      "price": 117.9
+    },
+    {
+      "company_code": "C127",
+      "date": "2020-02-11",
+      "price": 139.54
+    },
+    {
+      "company_code": "C127",
+      "date": "2023-05-13",
+      "price": 69.99
+    },
+    {
+      "company_code": "C127",
+      "date": "2023-07-24",
+      "price": 51.46
+    },
+    {
+      "company_code": "C128",
+      "date": "2023-02-17",
+      "price": 145.17
+    },
+    {
+      "company_code": "C128",
+      "date": "2020-12-12",
+      "price": 108.31
+    },
+    {
+      "company_code": "C128",
+      "date": "2022-12-05",
+      "price": 112.39
+    },
+    {
+      "company_code": "C128",
+      "date": "2022-04-27",
+      "price": 58.45
+    },
+    {
+      "company_code": "C128",
+      "date": "2022-07-23",
+      "price": 131.58
+    },
+    {
+      "company_code": "C129",
+      "date": "2021-07-21",
+      "price": 75.24
+    },
+    {
+      "company_code": "C129",
+      "date": "2020-09-28",
+      "price": 137.14
+    },
+    {
+      "company_code": "C129",
+      "date": "2021-11-08",
+      "price": 145.93
+    },
+    {
+      "company_code": "C129",
+      "date": "2023-10-16",
+      "price": 86.78
+    },
+    {
+      "company_code": "C129",
+      "date": "2023-09-21",
+      "price": 131.88
+    },
+    {
+      "company_code": "C130",
+      "date": "2022-09-14",
+      "price": 137.65
+    },
+    {
+      "company_code": "C130",
+      "date": "2020-08-22",
+      "price": 111.67
+    },
+    {
+      "company_code": "C130",
+      "date": "2022-05-01",
+      "price": 126.67
+    },
+    {
+      "company_code": "C130",
+      "date": "2020-05-23",
+      "price": 66.12
+    },
+    {
+      "company_code": "C130",
+      "date": "2023-10-07",
+      "price": 65.45
+    },
+    {
+      "company_code": "C131",
+      "date": "2023-11-16",
+      "price": 148.95
+    },
+    {
+      "company_code": "C131",
+      "date": "2023-04-24",
+      "price": 101.5
+    },
+    {
+      "company_code": "C131",
+      "date": "2020-04-03",
+      "price": 102.2
+    },
+    {
+      "company_code": "C131",
+      "date": "2023-09-19",
+      "price": 113.38
+    },
+    {
+      "company_code": "C131",
+      "date": "2023-04-21",
+      "price": 50.6
+    },
+    {
+      "company_code": "C132",
+      "date": "2021-09-10",
+      "price": 103.23
+    },
+    {
+      "company_code": "C132",
+      "date": "2021-07-19",
+      "price": 128.43
+    },
+    {
+      "company_code": "C132",
+      "date": "2020-04-17",
+      "price": 95.43
+    },
+    {
+      "company_code": "C132",
+      "date": "2023-12-19",
+      "price": 107.52
+    },
+    {
+      "company_code": "C132",
+      "date": "2022-07-16",
+      "price": 62.43
+    },
+    {
+      "company_code": "C133",
+      "date": "2020-02-11",
+      "price": 92.25
+    },
+    {
+      "company_code": "C133",
+      "date": "2023-12-08",
+      "price": 130.33
+    },
+    {
+      "company_code": "C133",
+      "date": "2022-05-20",
+      "price": 124.32
+    },
+    {
+      "company_code": "C133",
+      "date": "2023-07-15",
+      "price": 104.45
+    },
+    {
+      "company_code": "C133",
+      "date": "2021-03-01",
+      "price": 60.98
+    },
+    {
+      "company_code": "C134",
+      "date": "2021-09-07",
+      "price": 100.29
+    },
+    {
+      "company_code": "C134",
+      "date": "2020-02-27",
+      "price": 102.78
+    },
+    {
+      "company_code": "C134",
+      "date": "2021-07-19",
+      "price": 149.31
+    },
+    {
+      "company_code": "C134",
+      "date": "2022-08-20",
+      "price": 148.31
+    },
+    {
+      "company_code": "C134",
+      "date": "2020-09-26",
+      "price": 91.15
+    },
+    {
+      "company_code": "C135",
+      "date": "2020-08-25",
+      "price": 139.83
+    },
+    {
+      "company_code": "C135",
+      "date": "2023-06-09",
+      "price": 67.63
+    },
+    {
+      "company_code": "C135",
+      "date": "2021-03-24",
+      "price": 104.7
+    },
+    {
+      "company_code": "C135",
+      "date": "2021-09-05",
+      "price": 57.33
+    },
+    {
+      "company_code": "C135",
+      "date": "2023-07-16",
+      "price": 114.88
+    },
+    {
+      "company_code": "C136",
+      "date": "2023-06-20",
+      "price": 52.84
+    },
+    {
+      "company_code": "C136",
+      "date": "2021-06-09",
+      "price": 64.23
+    },
+    {
+      "company_code": "C136",
+      "date": "2022-11-28",
+      "price": 62
+    },
+    {
+      "company_code": "C136",
+      "date": "2021-11-19",
+      "price": 140.86
+    },
+    {
+      "company_code": "C136",
+      "date": "2023-04-14",
+      "price": 123.78
+    },
+    {
+      "company_code": "C137",
+      "date": "2020-11-16",
+      "price": 145.07
+    },
+    {
+      "company_code": "C137",
+      "date": "2021-12-25",
+      "price": 108.94
+    },
+    {
+      "company_code": "C137",
+      "date": "2021-04-03",
+      "price": 62.46
+    },
+    {
+      "company_code": "C137",
+      "date": "2020-12-12",
+      "price": 127.05
+    },
+    {
+      "company_code": "C137",
+      "date": "2022-08-03",
+      "price": 116.66
+    },
+    {
+      "company_code": "C138",
+      "date": "2023-09-13",
+      "price": 116.65
+    },
+    {
+      "company_code": "C138",
+      "date": "2023-09-16",
+      "price": 51.46
+    },
+    {
+      "company_code": "C138",
+      "date": "2022-12-28",
+      "price": 100.05
+    },
+    {
+      "company_code": "C138",
+      "date": "2020-08-01",
+      "price": 60.6
+    },
+    {
+      "company_code": "C138",
+      "date": "2022-08-06",
+      "price": 105.05
+    },
+    {
+      "company_code": "C139",
+      "date": "2023-12-04",
+      "price": 119.66
+    },
+    {
+      "company_code": "C139",
+      "date": "2022-06-23",
+      "price": 73.95
+    },
+    {
+      "company_code": "C139",
+      "date": "2020-02-11",
+      "price": 131.52
+    },
+    {
+      "company_code": "C139",
+      "date": "2023-02-22",
+      "price": 91.71
+    },
+    {
+      "company_code": "C139",
+      "date": "2020-07-15",
+      "price": 124.68
+    },
+    {
+      "company_code": "C140",
+      "date": "2020-09-18",
+      "price": 98.73
+    },
+    {
+      "company_code": "C140",
+      "date": "2023-07-22",
+      "price": 51.75
+    },
+    {
+      "company_code": "C140",
+      "date": "2022-10-19",
+      "price": 142.29
+    },
+    {
+      "company_code": "C140",
+      "date": "2022-10-08",
+      "price": 93.14
+    },
+    {
+      "company_code": "C140",
+      "date": "2021-03-28",
+      "price": 82.69
+    },
+    {
+      "company_code": "C141",
+      "date": "2022-01-18",
+      "price": 113.9
+    },
+    {
+      "company_code": "C141",
+      "date": "2023-08-13",
+      "price": 87.48
+    },
+    {
+      "company_code": "C141",
+      "date": "2022-10-10",
+      "price": 149.47
+    },
+    {
+      "company_code": "C141",
+      "date": "2023-02-06",
+      "price": 99.99
+    },
+    {
+      "company_code": "C141",
+      "date": "2023-04-07",
+      "price": 80.62
+    },
+    {
+      "company_code": "C142",
+      "date": "2021-11-15",
+      "price": 132.83
+    },
+    {
+      "company_code": "C142",
+      "date": "2020-08-06",
+      "price": 66.21
+    },
+    {
+      "company_code": "C142",
+      "date": "2021-06-18",
+      "price": 116.25
+    },
+    {
+      "company_code": "C142",
+      "date": "2021-02-25",
+      "price": 147.66
+    },
+    {
+      "company_code": "C142",
+      "date": "2021-07-07",
+      "price": 76.02
+    },
+    {
+      "company_code": "C143",
+      "date": "2022-03-28",
+      "price": 108.54
+    },
+    {
+      "company_code": "C143",
+      "date": "2023-11-18",
+      "price": 125.56
+    },
+    {
+      "company_code": "C143",
+      "date": "2021-04-01",
+      "price": 114.73
+    },
+    {
+      "company_code": "C143",
+      "date": "2022-03-09",
+      "price": 97.03
+    },
+    {
+      "company_code": "C143",
+      "date": "2023-05-15",
+      "price": 112.52
+    },
+    {
+      "company_code": "C144",
+      "date": "2023-03-26",
+      "price": 72.93
+    },
+    {
+      "company_code": "C144",
+      "date": "2021-08-08",
+      "price": 93.97
+    },
+    {
+      "company_code": "C144",
+      "date": "2022-01-19",
+      "price": 80.67
+    },
+    {
+      "company_code": "C144",
+      "date": "2021-06-27",
+      "price": 118.98
+    },
+    {
+      "company_code": "C144",
+      "date": "2021-04-02",
+      "price": 72.2
+    },
+    {
+      "company_code": "C145",
+      "date": "2020-07-10",
+      "price": 95.24
+    },
+    {
+      "company_code": "C145",
+      "date": "2020-03-09",
+      "price": 104.56
+    },
+    {
+      "company_code": "C145",
+      "date": "2023-08-08",
+      "price": 131.99
+    },
+    {
+      "company_code": "C145",
+      "date": "2022-11-08",
+      "price": 124.01
+    },
+    {
+      "company_code": "C145",
+      "date": "2023-03-27",
+      "price": 79.77
+    },
+    {
+      "company_code": "C146",
+      "date": "2022-03-02",
+      "price": 68.63
+    },
+    {
+      "company_code": "C146",
+      "date": "2023-12-02",
+      "price": 75.52
+    },
+    {
+      "company_code": "C146",
+      "date": "2021-02-09",
+      "price": 118.75
+    },
+    {
+      "company_code": "C146",
+      "date": "2022-06-05",
+      "price": 121.91
+    },
+    {
+      "company_code": "C146",
+      "date": "2020-05-17",
+      "price": 79.62
+    },
+    {
+      "company_code": "C147",
+      "date": "2022-10-21",
+      "price": 95.06
+    },
+    {
+      "company_code": "C147",
+      "date": "2023-01-27",
+      "price": 69.94
+    },
+    {
+      "company_code": "C147",
+      "date": "2022-06-02",
+      "price": 91.54
+    },
+    {
+      "company_code": "C147",
+      "date": "2023-09-16",
+      "price": 135.54
+    },
+    {
+      "company_code": "C147",
+      "date": "2023-01-03",
+      "price": 109.63
+    },
+    {
+      "company_code": "C148",
+      "date": "2022-07-14",
+      "price": 50.44
+    },
+    {
+      "company_code": "C148",
+      "date": "2021-02-06",
+      "price": 111.67
+    },
+    {
+      "company_code": "C148",
+      "date": "2021-01-27",
+      "price": 57.1
+    },
+    {
+      "company_code": "C148",
+      "date": "2021-10-22",
+      "price": 120.72
+    },
+    {
+      "company_code": "C148",
+      "date": "2023-03-18",
+      "price": 95.71
+    },
+    {
+      "company_code": "C149",
+      "date": "2023-11-02",
+      "price": 102.78
+    },
+    {
+      "company_code": "C149",
+      "date": "2022-07-07",
+      "price": 93.97
+    },
+    {
+      "company_code": "C149",
+      "date": "2020-04-22",
+      "price": 103.51
+    },
+    {
+      "company_code": "C149",
+      "date": "2022-08-18",
+      "price": 145
+    },
+    {
+      "company_code": "C149",
+      "date": "2023-11-24",
+      "price": 50.54
+    },
+    {
+      "company_code": "C150",
+      "date": "2022-03-09",
+      "price": 96.29
+    },
+    {
+      "company_code": "C150",
+      "date": "2021-02-05",
+      "price": 142.86
+    },
+    {
+      "company_code": "C150",
+      "date": "2022-10-08",
+      "price": 51.91
+    },
+    {
+      "company_code": "C150",
+      "date": "2023-12-13",
+      "price": 55.1
+    },
+    {
+      "company_code": "C150",
+      "date": "2020-09-22",
+      "price": 129.56
+    },
+    {
+      "company_code": "C151",
+      "date": "2020-04-02",
+      "price": 129.89
+    },
+    {
+      "company_code": "C151",
+      "date": "2021-02-04",
+      "price": 85.05
+    },
+    {
+      "company_code": "C151",
+      "date": "2023-05-22",
+      "price": 90.83
+    },
+    {
+      "company_code": "C151",
+      "date": "2020-10-27",
+      "price": 131.4
+    },
+    {
+      "company_code": "C151",
+      "date": "2021-08-16",
+      "price": 136.86
+    },
+    {
+      "company_code": "C152",
+      "date": "2022-06-23",
+      "price": 106.56
+    },
+    {
+      "company_code": "C152",
+      "date": "2022-07-17",
+      "price": 88.69
+    },
+    {
+      "company_code": "C152",
+      "date": "2020-02-21",
+      "price": 73.95
+    },
+    {
+      "company_code": "C152",
+      "date": "2020-08-23",
+      "price": 62.97
+    },
+    {
+      "company_code": "C152",
+      "date": "2022-11-04",
+      "price": 85.89
+    },
+    {
+      "company_code": "C153",
+      "date": "2022-03-06",
+      "price": 105.73
+    },
+    {
+      "company_code": "C153",
+      "date": "2020-06-28",
+      "price": 64.32
+    },
+    {
+      "company_code": "C153",
+      "date": "2020-09-26",
+      "price": 78.93
+    },
+    {
+      "company_code": "C153",
+      "date": "2023-06-16",
+      "price": 70.2
+    },
+    {
+      "company_code": "C153",
+      "date": "2021-11-14",
+      "price": 111.16
+    },
+    {
+      "company_code": "C154",
+      "date": "2023-08-19",
+      "price": 77.74
+    },
+    {
+      "company_code": "C154",
+      "date": "2023-09-13",
+      "price": 144.64
+    },
+    {
+      "company_code": "C154",
+      "date": "2022-02-25",
+      "price": 89.98
+    },
+    {
+      "company_code": "C154",
+      "date": "2021-01-05",
+      "price": 145.04
+    },
+    {
+      "company_code": "C154",
+      "date": "2022-11-03",
+      "price": 140.25
+    },
+    {
+      "company_code": "C155",
+      "date": "2022-08-04",
+      "price": 68.16
+    },
+    {
+      "company_code": "C155",
+      "date": "2023-05-26",
+      "price": 139.97
+    },
+    {
+      "company_code": "C155",
+      "date": "2021-01-13",
+      "price": 139.91
+    },
+    {
+      "company_code": "C155",
+      "date": "2023-12-11",
+      "price": 80.13
+    },
+    {
+      "company_code": "C155",
+      "date": "2023-08-05",
+      "price": 63.59
+    },
+    {
+      "company_code": "C156",
+      "date": "2023-09-12",
+      "price": 84.33
+    },
+    {
+      "company_code": "C156",
+      "date": "2021-05-11",
+      "price": 56.46
+    },
+    {
+      "company_code": "C156",
+      "date": "2020-02-05",
+      "price": 135.48
+    },
+    {
+      "company_code": "C156",
+      "date": "2023-02-06",
+      "price": 142.13
+    },
+    {
+      "company_code": "C156",
+      "date": "2020-03-22",
+      "price": 56.16
+    },
+    {
+      "company_code": "C157",
+      "date": "2021-02-03",
+      "price": 71.03
+    },
+    {
+      "company_code": "C157",
+      "date": "2021-09-12",
+      "price": 71.92
+    },
+    {
+      "company_code": "C157",
+      "date": "2020-08-11",
+      "price": 62.03
+    },
+    {
+      "company_code": "C157",
+      "date": "2020-03-13",
+      "price": 145.07
+    },
+    {
+      "company_code": "C157",
+      "date": "2022-01-03",
+      "price": 73.1
+    },
+    {
+      "company_code": "C158",
+      "date": "2021-06-23",
+      "price": 110.13
+    },
+    {
+      "company_code": "C158",
+      "date": "2020-08-06",
+      "price": 144.17
+    },
+    {
+      "company_code": "C158",
+      "date": "2021-10-09",
+      "price": 124.79
+    },
+    {
+      "company_code": "C158",
+      "date": "2021-08-24",
+      "price": 120.99
+    },
+    {
+      "company_code": "C158",
+      "date": "2022-08-16",
+      "price": 135.69
+    },
+    {
+      "company_code": "C159",
+      "date": "2022-01-24",
+      "price": 120.16
+    },
+    {
+      "company_code": "C159",
+      "date": "2022-02-18",
+      "price": 118.06
+    },
+    {
+      "company_code": "C159",
+      "date": "2020-07-18",
+      "price": 102.99
+    },
+    {
+      "company_code": "C159",
+      "date": "2022-11-23",
+      "price": 55.4
+    },
+    {
+      "company_code": "C159",
+      "date": "2023-06-23",
+      "price": 137.43
+    },
+    {
+      "company_code": "C160",
+      "date": "2020-05-03",
+      "price": 112.65
+    },
+    {
+      "company_code": "C160",
+      "date": "2021-06-05",
+      "price": 149.33
+    },
+    {
+      "company_code": "C160",
+      "date": "2023-08-19",
+      "price": 50.9
+    },
+    {
+      "company_code": "C160",
+      "date": "2020-02-24",
+      "price": 60.91
+    },
+    {
+      "company_code": "C160",
+      "date": "2023-08-18",
+      "price": 91.55
+    },
+    {
+      "company_code": "C161",
+      "date": "2020-05-13",
+      "price": 72.76
+    },
+    {
+      "company_code": "C161",
+      "date": "2023-08-07",
+      "price": 55.41
+    },
+    {
+      "company_code": "C161",
+      "date": "2021-07-18",
+      "price": 82.13
+    },
+    {
+      "company_code": "C161",
+      "date": "2020-06-19",
+      "price": 125.42
+    },
+    {
+      "company_code": "C161",
+      "date": "2023-04-10",
+      "price": 58.18
+    },
+    {
+      "company_code": "C162",
+      "date": "2022-02-28",
+      "price": 120.48
+    },
+    {
+      "company_code": "C162",
+      "date": "2022-04-28",
+      "price": 54.96
+    },
+    {
+      "company_code": "C162",
+      "date": "2023-01-16",
+      "price": 127.09
+    },
+    {
+      "company_code": "C162",
+      "date": "2021-08-03",
+      "price": 89.76
+    },
+    {
+      "company_code": "C162",
+      "date": "2021-03-12",
+      "price": 79.6
+    },
+    {
+      "company_code": "C163",
+      "date": "2022-06-01",
+      "price": 66.63
+    },
+    {
+      "company_code": "C163",
+      "date": "2020-11-20",
+      "price": 100.99
+    },
+    {
+      "company_code": "C163",
+      "date": "2022-08-15",
+      "price": 109.05
+    },
+    {
+      "company_code": "C163",
+      "date": "2023-05-26",
+      "price": 118.31
+    },
+    {
+      "company_code": "C163",
+      "date": "2022-02-13",
+      "price": 93.98
+    },
+    {
+      "company_code": "C164",
+      "date": "2023-12-07",
+      "price": 116.31
+    },
+    {
+      "company_code": "C164",
+      "date": "2021-10-19",
+      "price": 134.61
+    },
+    {
+      "company_code": "C164",
+      "date": "2020-12-16",
+      "price": 62.89
+    },
+    {
+      "company_code": "C164",
+      "date": "2020-11-23",
+      "price": 131.05
+    },
+    {
+      "company_code": "C164",
+      "date": "2020-03-23",
+      "price": 58.7
+    },
+    {
+      "company_code": "C165",
+      "date": "2023-11-14",
+      "price": 121.97
+    },
+    {
+      "company_code": "C165",
+      "date": "2023-08-12",
+      "price": 77.06
+    },
+    {
+      "company_code": "C165",
+      "date": "2022-06-07",
+      "price": 103.52
+    },
+    {
+      "company_code": "C165",
+      "date": "2021-06-13",
+      "price": 51.12
+    },
+    {
+      "company_code": "C165",
+      "date": "2020-06-13",
+      "price": 127.42
+    },
+    {
+      "company_code": "C166",
+      "date": "2021-07-05",
+      "price": 105.04
+    },
+    {
+      "company_code": "C166",
+      "date": "2023-04-03",
+      "price": 109.28
+    },
+    {
+      "company_code": "C166",
+      "date": "2020-04-26",
+      "price": 134.07
+    },
+    {
+      "company_code": "C166",
+      "date": "2021-10-25",
+      "price": 74.82
+    },
+    {
+      "company_code": "C166",
+      "date": "2021-05-24",
+      "price": 75.01
+    },
+    {
+      "company_code": "C167",
+      "date": "2021-05-20",
+      "price": 71.18
+    },
+    {
+      "company_code": "C167",
+      "date": "2020-10-11",
+      "price": 69.02
+    },
+    {
+      "company_code": "C167",
+      "date": "2020-06-02",
+      "price": 51.02
+    },
+    {
+      "company_code": "C167",
+      "date": "2023-02-22",
+      "price": 145.72
+    },
+    {
+      "company_code": "C167",
+      "date": "2023-09-15",
+      "price": 55.69
+    },
+    {
+      "company_code": "C168",
+      "date": "2020-05-05",
+      "price": 60
+    },
+    {
+      "company_code": "C168",
+      "date": "2020-08-09",
+      "price": 140.55
+    },
+    {
+      "company_code": "C168",
+      "date": "2020-02-11",
+      "price": 105.65
+    },
+    {
+      "company_code": "C168",
+      "date": "2021-09-16",
+      "price": 80.31
+    },
+    {
+      "company_code": "C168",
+      "date": "2020-12-10",
+      "price": 110.71
+    },
+    {
+      "company_code": "C169",
+      "date": "2020-01-26",
+      "price": 92.79
+    },
+    {
+      "company_code": "C169",
+      "date": "2021-06-27",
+      "price": 126.52
+    },
+    {
+      "company_code": "C169",
+      "date": "2023-12-10",
+      "price": 105.35
+    },
+    {
+      "company_code": "C169",
+      "date": "2021-09-27",
+      "price": 68.97
+    },
+    {
+      "company_code": "C169",
+      "date": "2022-05-26",
+      "price": 98.08
+    },
+    {
+      "company_code": "C170",
+      "date": "2020-06-15",
+      "price": 65.3
+    },
+    {
+      "company_code": "C170",
+      "date": "2023-03-14",
+      "price": 50.26
+    },
+    {
+      "company_code": "C170",
+      "date": "2023-12-03",
+      "price": 141.87
+    },
+    {
+      "company_code": "C170",
+      "date": "2022-01-13",
+      "price": 140.29
+    },
+    {
+      "company_code": "C170",
+      "date": "2022-04-09",
+      "price": 87.57
+    },
+    {
+      "company_code": "C171",
+      "date": "2020-10-16",
+      "price": 89.12
+    },
+    {
+      "company_code": "C171",
+      "date": "2022-03-14",
+      "price": 132.97
+    },
+    {
+      "company_code": "C171",
+      "date": "2023-02-24",
+      "price": 68.91
+    },
+    {
+      "company_code": "C171",
+      "date": "2023-04-20",
+      "price": 140.11
+    },
+    {
+      "company_code": "C171",
+      "date": "2021-12-16",
+      "price": 58.52
+    },
+    {
+      "company_code": "C172",
+      "date": "2022-03-20",
+      "price": 62.87
+    },
+    {
+      "company_code": "C172",
+      "date": "2023-11-16",
+      "price": 54.14
+    },
+    {
+      "company_code": "C172",
+      "date": "2022-11-11",
+      "price": 61.22
+    },
+    {
+      "company_code": "C172",
+      "date": "2021-02-28",
+      "price": 131.74
+    },
+    {
+      "company_code": "C172",
+      "date": "2023-02-26",
+      "price": 82.25
+    },
+    {
+      "company_code": "C173",
+      "date": "2022-08-27",
+      "price": 111.34
+    },
+    {
+      "company_code": "C173",
+      "date": "2021-05-15",
+      "price": 143.95
+    },
+    {
+      "company_code": "C173",
+      "date": "2022-09-24",
+      "price": 53.33
+    },
+    {
+      "company_code": "C173",
+      "date": "2020-02-04",
+      "price": 129.75
+    },
+    {
+      "company_code": "C173",
+      "date": "2023-10-15",
+      "price": 139.2
+    },
+    {
+      "company_code": "C174",
+      "date": "2020-11-21",
+      "price": 78.77
+    },
+    {
+      "company_code": "C174",
+      "date": "2021-02-22",
+      "price": 116.94
+    },
+    {
+      "company_code": "C174",
+      "date": "2022-11-03",
+      "price": 110.55
+    },
+    {
+      "company_code": "C174",
+      "date": "2021-01-02",
+      "price": 100.41
+    },
+    {
+      "company_code": "C174",
+      "date": "2023-05-22",
+      "price": 149.92
+    },
+    {
+      "company_code": "C175",
+      "date": "2021-05-20",
+      "price": 107.67
+    },
+    {
+      "company_code": "C175",
+      "date": "2023-03-03",
+      "price": 54.47
+    },
+    {
+      "company_code": "C175",
+      "date": "2022-11-23",
+      "price": 68.13
+    },
+    {
+      "company_code": "C175",
+      "date": "2023-12-22",
+      "price": 138.36
+    },
+    {
+      "company_code": "C175",
+      "date": "2020-06-08",
+      "price": 146.93
+    },
+    {
+      "company_code": "C176",
+      "date": "2021-08-21",
+      "price": 93.05
+    },
+    {
+      "company_code": "C176",
+      "date": "2021-09-26",
+      "price": 84.53
+    },
+    {
+      "company_code": "C176",
+      "date": "2021-11-16",
+      "price": 54.34
+    },
+    {
+      "company_code": "C176",
+      "date": "2020-10-18",
+      "price": 106.4
+    },
+    {
+      "company_code": "C176",
+      "date": "2020-06-13",
+      "price": 127.19
+    },
+    {
+      "company_code": "C177",
+      "date": "2021-05-05",
+      "price": 148.48
+    },
+    {
+      "company_code": "C177",
+      "date": "2023-03-26",
+      "price": 61.48
+    },
+    {
+      "company_code": "C177",
+      "date": "2023-03-08",
+      "price": 80.51
+    },
+    {
+      "company_code": "C177",
+      "date": "2020-08-04",
+      "price": 139.16
+    },
+    {
+      "company_code": "C177",
+      "date": "2021-08-27",
+      "price": 139.13
+    },
+    {
+      "company_code": "C178",
+      "date": "2020-12-26",
+      "price": 63.71
+    },
+    {
+      "company_code": "C178",
+      "date": "2020-07-20",
+      "price": 73.94
+    },
+    {
+      "company_code": "C178",
+      "date": "2023-01-23",
+      "price": 97.44
+    },
+    {
+      "company_code": "C178",
+      "date": "2021-11-17",
+      "price": 67.71
+    },
+    {
+      "company_code": "C178",
+      "date": "2023-10-01",
+      "price": 145.73
+    },
+    {
+      "company_code": "C179",
+      "date": "2021-04-17",
+      "price": 114.97
+    },
+    {
+      "company_code": "C179",
+      "date": "2021-10-12",
+      "price": 147.89
+    },
+    {
+      "company_code": "C179",
+      "date": "2022-02-07",
+      "price": 65.87
+    },
+    {
+      "company_code": "C179",
+      "date": "2023-04-27",
+      "price": 101.26
+    },
+    {
+      "company_code": "C179",
+      "date": "2021-10-25",
+      "price": 102.15
+    },
+    {
+      "company_code": "C180",
+      "date": "2022-02-24",
+      "price": 141.94
+    },
+    {
+      "company_code": "C180",
+      "date": "2022-04-03",
+      "price": 51.27
+    },
+    {
+      "company_code": "C180",
+      "date": "2020-07-04",
+      "price": 136.91
+    },
+    {
+      "company_code": "C180",
+      "date": "2020-12-22",
+      "price": 116.2
+    },
+    {
+      "company_code": "C180",
+      "date": "2020-07-11",
+      "price": 96.73
+    },
+    {
+      "company_code": "C181",
+      "date": "2020-09-27",
+      "price": 122.43
+    },
+    {
+      "company_code": "C181",
+      "date": "2020-01-28",
+      "price": 62.75
+    },
+    {
+      "company_code": "C181",
+      "date": "2023-08-07",
+      "price": 61.29
+    },
+    {
+      "company_code": "C181",
+      "date": "2021-06-02",
+      "price": 91.74
+    },
+    {
+      "company_code": "C181",
+      "date": "2023-07-26",
+      "price": 59.5
+    },
+    {
+      "company_code": "C182",
+      "date": "2021-11-16",
+      "price": 132.15
+    },
+    {
+      "company_code": "C182",
+      "date": "2021-08-08",
+      "price": 128.01
+    },
+    {
+      "company_code": "C182",
+      "date": "2022-11-27",
+      "price": 56.51
+    },
+    {
+      "company_code": "C182",
+      "date": "2021-10-06",
+      "price": 74.88
+    },
+    {
+      "company_code": "C182",
+      "date": "2022-11-26",
+      "price": 131.95
+    },
+    {
+      "company_code": "C183",
+      "date": "2023-01-21",
+      "price": 72.75
+    },
+    {
+      "company_code": "C183",
+      "date": "2023-07-26",
+      "price": 141.24
+    },
+    {
+      "company_code": "C183",
+      "date": "2021-04-10",
+      "price": 98.2
+    },
+    {
+      "company_code": "C183",
+      "date": "2021-10-12",
+      "price": 113.87
+    },
+    {
+      "company_code": "C183",
+      "date": "2023-07-18",
+      "price": 141.97
+    },
+    {
+      "company_code": "C184",
+      "date": "2022-06-13",
+      "price": 149.15
+    },
+    {
+      "company_code": "C184",
+      "date": "2023-12-02",
+      "price": 130.12
+    },
+    {
+      "company_code": "C184",
+      "date": "2020-02-11",
+      "price": 116.48
+    },
+    {
+      "company_code": "C184",
+      "date": "2022-01-19",
+      "price": 84.34
+    },
+    {
+      "company_code": "C184",
+      "date": "2020-07-01",
+      "price": 124.67
+    },
+    {
+      "company_code": "C185",
+      "date": "2020-01-16",
+      "price": 121.39
+    },
+    {
+      "company_code": "C185",
+      "date": "2020-06-22",
+      "price": 115.45
+    },
+    {
+      "company_code": "C185",
+      "date": "2021-09-05",
+      "price": 86.59
+    },
+    {
+      "company_code": "C185",
+      "date": "2022-06-28",
+      "price": 96.19
+    },
+    {
+      "company_code": "C185",
+      "date": "2022-09-16",
+      "price": 73.6
+    },
+    {
+      "company_code": "C186",
+      "date": "2023-12-08",
+      "price": 113.97
+    },
+    {
+      "company_code": "C186",
+      "date": "2021-06-22",
+      "price": 107.85
+    },
+    {
+      "company_code": "C186",
+      "date": "2021-06-15",
+      "price": 127.34
+    },
+    {
+      "company_code": "C186",
+      "date": "2022-06-16",
+      "price": 103.94
+    },
+    {
+      "company_code": "C186",
+      "date": "2023-05-14",
+      "price": 63.58
+    },
+    {
+      "company_code": "C187",
+      "date": "2020-02-09",
+      "price": 119.69
+    },
+    {
+      "company_code": "C187",
+      "date": "2020-01-07",
+      "price": 128.66
+    },
+    {
+      "company_code": "C187",
+      "date": "2021-04-11",
+      "price": 57.23
+    },
+    {
+      "company_code": "C187",
+      "date": "2023-03-23",
+      "price": 123.65
+    },
+    {
+      "company_code": "C187",
+      "date": "2020-08-04",
+      "price": 143.3
+    },
+    {
+      "company_code": "C188",
+      "date": "2023-01-21",
+      "price": 148.66
+    },
+    {
+      "company_code": "C188",
+      "date": "2023-07-01",
+      "price": 87.82
+    },
+    {
+      "company_code": "C188",
+      "date": "2022-08-21",
+      "price": 53.1
+    },
+    {
+      "company_code": "C188",
+      "date": "2021-06-19",
+      "price": 53.01
+    },
+    {
+      "company_code": "C188",
+      "date": "2022-08-24",
+      "price": 85.31
+    },
+    {
+      "company_code": "C189",
+      "date": "2022-03-24",
+      "price": 68.65
+    },
+    {
+      "company_code": "C189",
+      "date": "2021-09-19",
+      "price": 145.83
+    },
+    {
+      "company_code": "C189",
+      "date": "2023-10-17",
+      "price": 88.99
+    },
+    {
+      "company_code": "C189",
+      "date": "2023-07-26",
+      "price": 144.63
+    },
+    {
+      "company_code": "C189",
+      "date": "2022-02-06",
+      "price": 70.62
+    },
+    {
+      "company_code": "C190",
+      "date": "2023-09-08",
+      "price": 101.87
+    },
+    {
+      "company_code": "C190",
+      "date": "2021-11-19",
+      "price": 83.65
+    },
+    {
+      "company_code": "C190",
+      "date": "2023-09-08",
+      "price": 101.25
+    },
+    {
+      "company_code": "C190",
+      "date": "2020-06-11",
+      "price": 82.51
+    },
+    {
+      "company_code": "C190",
+      "date": "2021-01-08",
+      "price": 107.22
+    },
+    {
+      "company_code": "C191",
+      "date": "2020-02-11",
+      "price": 110.87
+    },
+    {
+      "company_code": "C191",
+      "date": "2023-08-19",
+      "price": 70.17
+    },
+    {
+      "company_code": "C191",
+      "date": "2023-06-02",
+      "price": 123.37
+    },
+    {
+      "company_code": "C191",
+      "date": "2020-12-03",
+      "price": 112.01
+    },
+    {
+      "company_code": "C191",
+      "date": "2023-11-26",
+      "price": 132.62
+    },
+    {
+      "company_code": "C192",
+      "date": "2023-08-14",
+      "price": 141.11
+    },
+    {
+      "company_code": "C192",
+      "date": "2021-07-25",
+      "price": 107.82
+    },
+    {
+      "company_code": "C192",
+      "date": "2020-01-02",
+      "price": 95.3
+    },
+    {
+      "company_code": "C192",
+      "date": "2023-07-19",
+      "price": 118.89
+    },
+    {
+      "company_code": "C192",
+      "date": "2023-03-08",
+      "price": 60.34
+    },
+    {
+      "company_code": "C193",
+      "date": "2021-09-23",
+      "price": 77.96
+    },
+    {
+      "company_code": "C193",
+      "date": "2020-12-12",
+      "price": 123.18
+    },
+    {
+      "company_code": "C193",
+      "date": "2023-01-14",
+      "price": 90.67
+    },
+    {
+      "company_code": "C193",
+      "date": "2021-05-20",
+      "price": 106.32
+    },
+    {
+      "company_code": "C193",
+      "date": "2020-05-07",
+      "price": 77.8
+    },
+    {
+      "company_code": "C194",
+      "date": "2020-07-27",
+      "price": 51.7
+    },
+    {
+      "company_code": "C194",
+      "date": "2020-09-10",
+      "price": 66.58
+    },
+    {
+      "company_code": "C194",
+      "date": "2020-01-10",
+      "price": 76.83
+    },
+    {
+      "company_code": "C194",
+      "date": "2020-05-14",
+      "price": 88.07
+    },
+    {
+      "company_code": "C194",
+      "date": "2021-06-23",
+      "price": 86.43
+    },
+    {
+      "company_code": "C195",
+      "date": "2022-05-06",
+      "price": 99.36
+    },
+    {
+      "company_code": "C195",
+      "date": "2023-07-05",
+      "price": 63.93
+    },
+    {
+      "company_code": "C195",
+      "date": "2021-03-23",
+      "price": 56.25
+    },
+    {
+      "company_code": "C195",
+      "date": "2023-03-01",
+      "price": 114.87
+    },
+    {
+      "company_code": "C195",
+      "date": "2020-09-16",
+      "price": 93.93
+    },
+    {
+      "company_code": "C196",
+      "date": "2021-02-08",
+      "price": 95.65
+    },
+    {
+      "company_code": "C196",
+      "date": "2020-10-12",
+      "price": 51.45
+    },
+    {
+      "company_code": "C196",
+      "date": "2022-03-01",
+      "price": 146
+    },
+    {
+      "company_code": "C196",
+      "date": "2022-05-19",
+      "price": 73.17
+    },
+    {
+      "company_code": "C196",
+      "date": "2021-01-23",
+      "price": 132.22
+    },
+    {
+      "company_code": "C197",
+      "date": "2023-07-20",
+      "price": 79.38
+    },
+    {
+      "company_code": "C197",
+      "date": "2021-06-07",
+      "price": 96.56
+    },
+    {
+      "company_code": "C197",
+      "date": "2022-05-03",
+      "price": 70.78
+    },
+    {
+      "company_code": "C197",
+      "date": "2021-07-18",
+      "price": 148.78
+    },
+    {
+      "company_code": "C197",
+      "date": "2020-12-05",
+      "price": 133.7
+    },
+    {
+      "company_code": "C198",
+      "date": "2022-08-14",
+      "price": 132.56
+    },
+    {
+      "company_code": "C198",
+      "date": "2020-04-06",
+      "price": 114.52
+    },
+    {
+      "company_code": "C198",
+      "date": "2020-07-27",
+      "price": 53.49
+    },
+    {
+      "company_code": "C198",
+      "date": "2022-12-22",
+      "price": 117.68
+    },
+    {
+      "company_code": "C198",
+      "date": "2023-11-07",
+      "price": 55.62
+    },
+    {
+      "company_code": "C199",
+      "date": "2022-03-02",
+      "price": 66.52
+    },
+    {
+      "company_code": "C199",
+      "date": "2023-03-24",
+      "price": 126.31
+    },
+    {
+      "company_code": "C199",
+      "date": "2023-05-01",
+      "price": 66.32
+    },
+    {
+      "company_code": "C199",
+      "date": "2022-05-20",
+      "price": 77.66
+    },
+    {
+      "company_code": "C199",
+      "date": "2023-01-07",
+      "price": 85.74
+    },
+    {
+      "company_code": "C200",
+      "date": "2020-08-26",
+      "price": 68.63
+    },
+    {
+      "company_code": "C200",
+      "date": "2020-11-26",
+      "price": 97.41
+    },
+    {
+      "company_code": "C200",
+      "date": "2022-09-16",
+      "price": 83.81
+    },
+    {
+      "company_code": "C200",
+      "date": "2022-03-13",
+      "price": 68.43
+    },
+    {
+      "company_code": "C200",
+      "date": "2023-07-26",
+      "price": 111.48
+    }
+  ]
+}
