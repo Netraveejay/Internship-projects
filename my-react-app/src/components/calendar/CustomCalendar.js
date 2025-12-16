@@ -171,30 +171,18 @@ function CustomCalendar() {
 
     return (
       <div className="cal-tl-wrapper">
-        <div style={{ margin: "10px 100px", display: "flex", gap: "8px" }}>
+        <div className="timeline-filters">
           {["all", "dividend", "split", "result"].map((cat) => (
             <button
               key={cat}
               onClick={() => setTimelineFilter(cat)}
-              style={{
-                padding: "6px 12px",
-                borderRadius: "8px",
-                border:
-                  timelineFilter === cat
-                    ? "2px solid #6366f1"
-                    : "1px solid #ccc",
-                background: timelineFilter === cat ? "#6366f1" : "#f3ebff",
-                color: timelineFilter === cat ? "#fff" : "#1d1d27",
-                cursor: "pointer",
-                fontWeight: "600",
-                fontSize: "13px",
-                transition: "0.2s",
-              }}
+              className={timelineFilter === cat ? "active-filter" : ""}
             >
               {cat.charAt(0).toUpperCase() + cat.slice(1)}
             </button>
           ))}
         </div>
+
         <div className="cal-tl-line">
           {allTimelineEvents
             .filter((ev) => {
@@ -352,6 +340,12 @@ function CustomCalendar() {
       >
         ⛶
       </button>
+      <button
+        className="show-timeline-btn"
+        onClick={() => setFullscreenTimeline(true)}
+      >
+        Show Timeline
+      </button>
 
       {isLoading ? (
         <div className="calendar-shimmer">
@@ -373,9 +367,13 @@ function CustomCalendar() {
             prevLabel={null}
             nextLabel={null}
           />
-          {!fullscreenTimeline && (
-            <Timeline activeMonth={currentMonth} activeYear={currentYear} />
-          )}
+
+          {/* Desktop inline timeline only */}
+          <div className="timeline-desktop">
+            {!fullscreenTimeline && (
+              <Timeline activeMonth={currentMonth} activeYear={currentYear} />
+            )}
+          </div>
         </div>
       )}
 

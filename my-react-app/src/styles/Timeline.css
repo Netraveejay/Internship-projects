@@ -2,7 +2,7 @@
   padding: 20px 40px;
   position: relative;
   max-height: 80vh;
-  overflow-y: auto;
+
   font-family: "Inter", sans-serif;
   background: #f8f9fc;
 }
@@ -395,3 +395,293 @@ body.dark .stock-error-reload {
 body.dark .stock-error-reload:hover {
   background: #b91c1c;
 }
+/* Mobile devices (≤480px) */
+@media (max-width: 480px) {
+  .stock-tl-wrapper {
+    padding: 10px 15px;
+    max-height: 70vh;
+  }
+  .stock-right .stock-tl-dot{
+    left:-6px;
+  }
+  .stock-left .stock-tl-dot{
+    right:46%;
+  }
+
+  .stock-tl-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .stock-tl-line{
+    align-items: center;
+    position:relative;
+    left:50%;
+    right:80%;
+    
+  }
+
+  .stock-tl-item {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .stock-left {
+
+    text-align: left !important;
+  }
+  .stock-right{
+    left:20 !important;
+  }
+
+  .stock-tl-dot {
+    top: 18px;
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+  }
+  
+
+  .stock-tl-box {
+    max-width: 95%;
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .stock-tl-date {
+    font-size: 12px;
+  }
+
+  .stock-tl-chip {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  
+  .stock-tl-line::before{
+    align-items: center;
+  }
+
+  .stock-tl-popup {
+    width: 90%;
+    padding: 15px;
+    max-height: 65vh;
+  }
+
+  .stock-tl-popup-title {
+    font-size: 18px;
+  }
+
+  .stock-tl-popup-list li {
+    font-size: 12px;
+  }
+
+  .stock-tl-chip-full {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .stock-tl-note {
+    font-size: 9px;
+    padding: 6px;
+  }
+
+  .stock-tl-close {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .stock-filter-bar {
+    
+    gap: 6px;
+  }
+
+
+  .stock-filter-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .shimmer-title {
+    width: 160px;
+    height: 24px;
+  }
+
+  .shimmer-filter {
+    width: 70px;
+    height: 28px;
+  }
+
+  .shimmer-date {
+    width: 80px;
+    height: 12px;
+  }
+
+  .shimmer-chip {
+    width: 120px;
+    height: 16px;
+  }
+
+  .timeline-error {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .timeline-retry-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .stock-error-box {
+    margin: 40px 15px;
+    padding: 15px;
+  }
+
+  .stock-error-box h3 {
+    font-size: 1rem;
+  }
+
+  .stock-error-reload {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet devices (≤768px) */
+@media (max-width: 768px) {
+  .stock-tl-wrapper {
+    padding: 15px 25px;
+    max-height: 75vh;
+  }
+
+  .stock-tl-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .stock-tl-item {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .stock-tl-dot {
+    top: 22px;
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+  }
+
+  .stock-tl-box {
+    max-width: 90%;
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  .stock-tl-date {
+    font-size: 13px;
+  }
+
+  .stock-tl-chip {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .stock-tl-popup {
+    width: 85%;
+    padding: 20px;
+    max-height: 70vh;
+  }
+
+  .stock-tl-popup-title {
+    font-size: 19px;
+  }
+
+  .stock-tl-popup-list li {
+    font-size: 13px;
+  }
+
+  .stock-tl-chip-full {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .stock-tl-note {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .stock-tl-close {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .stock-filter-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .stock-filter-btn {
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+
+  .shimmer-title {
+    width: 180px;
+    height: 26px;
+  }
+
+  .shimmer-filter {
+    width: 80px;
+    height: 30px;
+  }
+
+  .shimmer-date {
+    width: 90px;
+    height: 13px;
+  }
+
+  .shimmer-chip {
+    width: 130px;
+    height: 18px;
+  }
+
+  .timeline-error {
+    font-size: 13px;
+    padding: 15px;
+  }
+
+  .timeline-retry-btn {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .stock-error-box {
+    margin: 40px 20px;
+    padding: 18px;
+  }
+
+  .stock-error-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .stock-error-reload {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+  
+}
+.stock-tl-wrapper {
+  width: 100vw;              /* take full viewport width */
+  max-width: none;           /* remove constraints */
+  margin-left: calc(-50vw + 50%); /* escape parent container */
+}
+.stock-tl-line {
+  max-width: 1200px;   /* or 1300px */
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .stock-tl-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+

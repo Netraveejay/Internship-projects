@@ -107,5 +107,83 @@ body.dark .inline-error-box {
 .reload-btn:hover {
   opacity: 0.85;
 }
+/* Mobile devices (≤480px) */
+@media (max-width: 480px) {
+  .treemap-page {
+    padding: 10px;
+    width:150%;
+  }
+
+  .treemap-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .switch-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .treemap-container {
+    padding: 10px;
+  }
+
+  .treemap-shimmer {
+    height: 300px;
+    padding: 10px;
+  }
+
+  .inline-error-box {
+    margin: 20px 10px;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .reload-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet devices (≤768px) */
+@media (max-width: 768px) {
+  .treemap-page {
+    padding: 15px;
+  }
+
+  .treemap-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .switch-btn {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .treemap-container {
+    padding: 12px;
+  }
+
+  .treemap-shimmer {
+    height: 400px;
+    padding: 12px;
+  }
+
+  .inline-error-box {
+    margin: 30px 15px;
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .reload-btn {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
 
 

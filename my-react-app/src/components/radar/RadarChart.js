@@ -113,6 +113,33 @@ function RadarChart({ theme }) {
       pointFormat:
         '<span style="color:{point.color}">●</span> {series.name}: <b>{point.y:.2f}</b><br/>',
     },
+    responsive: {
+      rules: [
+        {
+          condition: {
+            // Target screens 600 pixels wide or less
+            maxWidth: 600,
+          },
+          chartOptions: {
+            // A. Move the legend below the chart area
+            legend: {
+              align: "center", // Center the legend horizontally
+              verticalAlign: "bottom", // Place it at the bottom
+              layout: "horizontal", // Stack items horizontally (less space)
+              itemMarginTop: 5, // Add a little space between items
+              itemStyle: {
+                fontSize: "9px", // Optional: Shrink font size for legend items
+              },
+            },
+            // B. Optional: Increase padding around the chart plot area
+            chart: {
+              spacingLeft: 20,
+              spacingRight: 20,
+            },
+          },
+        },
+      ],
+    },
     plotOptions: {
       series: {
         pointPlacement: "on",

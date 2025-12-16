@@ -1,10 +1,17 @@
-import { useMemo, useState, useEffect, useRef } from "react";
+import { useMemo, useState, useEffect, useRef, useCallback } from "react";
 import Highcharts from "highcharts/highstock";
 import HighchartsReact from "highcharts-react-official";
+// Import the Highcharts Annotations module
 import "highcharts/modules/annotations";
+
+// 1. IMPORT THE LIBRARY HOOK
+import { useVirtualizer } from "@tanstack/react-virtual";
+
+// Assuming these styles are needed for the component's appearance
 import "../../styles/StockChart.css";
 import "../../styles/RadarChart.css";
 
+// Assuming these are your data files
 import stockPricesData from "../../data/data_stockPrices.json";
 import annotationsData from "../../data/data_annotations.json";
 
@@ -15,6 +22,7 @@ const StockChart = function (theme) {
   const [loading, setLoading] = useState(true);
   const [datasetError, setDatasetError] = useState(false);
   const [errorDismissed, setErrorDismissed] = useState(false);
+  const [dataValidated, setDataValidated] = useState(false); // New state to manage validation timing
 
   const isDark = theme === "dark";
 
@@ -22,51 +30,65 @@ const StockChart = function (theme) {
   const [showDividend, setShowDividend] = useState(true);
   const [showSplit, setShowSplit] = useState(true);
 
+  // VIRTUALIZATION CONSTANTS
+  const itemHeight = 30; // Height of each row in pixels
+  const listHeight = 300; // Fixed height of the dropdown container (Visible area)
+
+  // ... (Existing useEffects for data validation and loading) ...
+
   useEffect(function () {
+    let hasError = false;
     try {
       var prices = stockPricesData && stockPricesData.data;
       var ann = annotationsData && annotationsData.data;
 
       if (!prices || !ann) {
-        setDatasetError(true);
-        return;
+        hasError = true;
+      } else if (!Array.isArray(prices) || !Array.isArray(ann)) {
+        hasError = true;
+      } else {
+        var validPrice = prices.every(function (d) {
+          return d && d.company_code && d.date && d.price !== undefined;
+        });
+        var validAnn = ann.every(function (d) {
+          return d && d.company_code && d.date && d.category;
+        });
+
+        if (!validPrice || !validAnn) {
+          hasError = true;
+        }
       }
 
-      if (!Array.isArray(prices) || !Array.isArray(ann)) {
-        setDatasetError(true);
-        return;
-      }
-
-      var validPrice = prices.every(function (d) {
-        return d && d.company_code && d.date && d.price !== undefined;
-      });
-      var validAnn = ann.every(function (d) {
-        return d && d.company_code && d.date && d.category;
-      });
-
-      if (!validPrice || !validAnn) {
-        setDatasetError(true);
-        return;
-      }
-
-      setDatasetError(false);
+      setDatasetError(hasError);
     } catch (err) {
       console.error("Dataset error:", err);
       setDatasetError(true);
+      hasError = true;
+    } finally {
+      setDataValidated(true);
+      if (!hasError) {
+        setLoading(false);
+      }
     }
   }, []);
 
-  useEffect(
-    function () {
+  useEffect(() => {
+    if (dataValidated && !datasetError) {
       var timer = setTimeout(function () {
         setLoading(false);
       }, 1200);
       return function () {
         clearTimeout(timer);
       };
-    },
-    [selectedCompany, showResult, showDividend, showSplit]
-  );
+    }
+  }, [
+    dataValidated,
+    datasetError,
+    selectedCompany,
+    showResult,
+    showDividend,
+    showSplit,
+  ]);
 
   var companies = useMemo(
     function () {
@@ -83,20 +105,14 @@ const StockChart = function (theme) {
     },
     [datasetError]
   );
+  const allCompanies = useMemo(() => ["all", ...companies], [companies]);
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [visibleStart, setVisibleStart] = useState(0);
-  var visibleCount = 10;
-  var itemHeight = 30;
   const dropdownRef = useRef(null);
+  const listRef = useRef(null);
 
   var toggleDropdown = function () {
     setDropdownOpen(!dropdownOpen);
-  };
-
-  var handleScroll = function (e) {
-    var scrollTop = e.currentTarget.scrollTop;
-    setVisibleStart(Math.floor(scrollTop / itemHeight));
   };
 
   var handleClickOutside = function (e) {
@@ -112,6 +128,18 @@ const StockChart = function (theme) {
     };
   }, []);
 
+  // 3. INITIALIZE useVirtualizer
+  const rowVirtualizer = useVirtualizer({
+    count: allCompanies.length,
+    getScrollElement: () => listRef.current,
+    estimateSize: useCallback(() => itemHeight, []),
+    overscan: 5,
+  });
+
+  const virtualRows = rowVirtualizer.getVirtualItems();
+
+  // ... (Existing chartData and options useMemo blocks) ...
+  // --- Chart Data Calculation (Memoized) ---
   var chartData = useMemo(
     function () {
       if (datasetError) return { seriesData: [], annotations: [] };
@@ -163,8 +191,7 @@ const StockChart = function (theme) {
 
       var filteredAnnotations = seriesData
         .filter(function (d, index) {
-          if (!annotatedPoints.has(index)) return false;
-          if (!d.annotation) return false;
+          if (!annotatedPoints.has(index) || !d.annotation) return false;
           var category = d.annotation.category;
           if (!showResult && !showDividend && !showSplit) return true;
           if (category === "result" && showResult) return true;
@@ -223,12 +250,13 @@ const StockChart = function (theme) {
   );
 
   var options = {
+    // ... (Highcharts options remain the same) ...
     chart: {
       type: "areaspline",
       backgroundColor: "var(--chart-bg)",
       style: { fontFamily: "Inter, sans-serif" },
       height: 550,
-      zooming: { type: "x" },
+      zoomType: "x",
     },
     title: {
       text:
@@ -259,6 +287,7 @@ const StockChart = function (theme) {
       title: { text: "Price (INR)", style: { color: "var(--chart-text)" } },
       labels: { style: { color: "var(--chart-text)" }, format: "{value} INR" },
       gridLineColor: "var(--chart-grid)",
+      min: 50,
     },
     tooltip: {
       backgroundColor: "var(--chart-bg)",
@@ -287,10 +316,12 @@ const StockChart = function (theme) {
             "'>■</span> <b>" +
             ann.category.toUpperCase() +
             "</b>";
-          html +=
-            "<br/><span style='font-size:11px;color:#aaa'>" +
-            ann.note +
-            "</span>";
+          if (ann.note) {
+            html +=
+              "<br/><span style='font-size:11px;color:#aaa'>" +
+              ann.note +
+              "</span>";
+          }
         }
         return html;
       },
@@ -302,13 +333,25 @@ const StockChart = function (theme) {
         type: "areaspline",
         color: "#e63946",
         data: chartData.seriesData,
+        fillColor: {
+          linearGradient: [0, 0, 0, 300],
+          stops: [
+            [0, Highcharts.color("#e63946").setOpacity(0.5).get("rgba")],
+            [1, Highcharts.color("#e63946").setOpacity(0).get("rgba")],
+          ],
+        },
+        marker: {
+          enabled: false,
+        },
       },
     ],
     annotations: chartData.annotations,
   };
 
+  // --- Component Render ---
   return (
     <div className="radar-chart-container">
+      {/* ... (Error and Loading states remain the same) ... */}
       {datasetError && !errorDismissed ? (
         <div className="inline-error-box">
           <h3>Oops! Data Loading Failed </h3>
@@ -353,6 +396,7 @@ const StockChart = function (theme) {
               </button>
             </div>
 
+            {/* Virtualized Dropdown - FIXED STYLES */}
             <div
               className="dropdown-container"
               ref={dropdownRef}
@@ -374,21 +418,22 @@ const StockChart = function (theme) {
                 }}
               >
                 {selectedCompany === "all"
-                  ? "Choose a Company"
+                  ? "Choose a Company "
                   : selectedCompany}
                 <span className={`arrow ${dropdownOpen ? "open" : ""}`}></span>
               </div>
 
               {dropdownOpen && (
                 <div
-                  className="dropdown-list"
-                  onScroll={handleScroll}
+                  className="dropdown-list-wrapper"
+                  // 4. Assign the scroll container ref here
+                  ref={listRef}
                   style={{
                     position: "absolute",
                     top: "100%",
                     left: 0,
                     right: 0,
-                    maxHeight: visibleCount * itemHeight + "px",
+                    maxHeight: listHeight + "px",
                     overflowY: "auto",
                     border: "1px solid var(--chart-grid)",
                     borderRadius: "4px",
@@ -397,34 +442,44 @@ const StockChart = function (theme) {
                   }}
                 >
                   <div
+                    // 5. Use Virtualizer's total size for the inner wrapper
                     style={{
-                      height: (companies.length + 1) * itemHeight + "px",
-                      position: "relative",
+                      height: rowVirtualizer.getTotalSize(),
+                      width: "100%",
+                      position: "relative", // IMPORTANT: For absolute children
                     }}
                   >
-                    {/* "All" item is now part of the virtualized list */}
-                    {["all", ...companies]
-                      .slice(visibleStart, visibleStart + visibleCount)
-                      .map((code, index) => {
+                    {
+                      // 6. Map over virtual rows instead of the entire array
+                      virtualRows.map((virtualRow) => {
+                        const index = virtualRow.index;
+                        const code = allCompanies[index];
                         const isAll = code === "all";
                         const displayCode = isAll ? "All" : code;
-                        const topPosition = (visibleStart + index) * itemHeight;
 
                         return (
                           <div
-                            key={code}
+                            key={virtualRow.key}
+                            data-index={index}
+                            // 7. Apply absolute positioning and transform
                             style={{
-                              position: "absolute",
-                              top: topPosition + "px",
-                              height: itemHeight + "px",
-                              lineHeight: itemHeight + "px",
+                              position: "absolute", // CRITICAL FIX: Add absolute positioning
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: virtualRow.size, // CRITICAL FIX: Use virtualRow.size
+                              // Use the virtualRow.start position
+                              transform: `translateY(${virtualRow.start}px)`,
+                              // Existing visual styles:
                               padding: "0 8px",
                               cursor: "pointer",
+                              lineHeight: itemHeight + "px",
                               background:
                                 (isAll && selectedCompany === "all") ||
                                 (!isAll && selectedCompany === code)
                                   ? "var(--chart-highlight)"
                                   : "transparent",
+                              color: "var(--ann-text-color)",
                             }}
                             onClick={() => {
                               setSelectedCompany(isAll ? "all" : code);
@@ -434,18 +489,21 @@ const StockChart = function (theme) {
                             {displayCode}
                           </div>
                         );
-                      })}
+                      })
+                    }
                   </div>
                 </div>
               )}
             </div>
+
+            {/* Standard Dropdown (for comparison) */}
             <div
               className="normal-dropdown-container"
               style={{
                 position: "relative",
                 width: "200px",
                 marginLeft: "20px",
-              }} // added margin to sit beside the first dropdown
+              }}
             >
               <select
                 className="normal-dropdown-select"
@@ -461,7 +519,7 @@ const StockChart = function (theme) {
                   color: "var(--ann-text-color)",
                 }}
               >
-                <option value="all">Choose a Company</option>
+                <option value="all">Choose a Company (Standard)</option>
                 {companies.map((code) => (
                   <option key={code} value={code}>
                     {code}
@@ -471,6 +529,7 @@ const StockChart = function (theme) {
             </div>
           </div>
 
+          {/* Legend for Annotations */}
           <div className="legend">
             <div
               className={"legend-item " + (showResult ? "active" : "")}
@@ -486,7 +545,8 @@ const StockChart = function (theme) {
                 setShowDividend(!showDividend);
               }}
             >
-              <span className="legend-dot dividend"></span>Dividend
+              <span className="legend-dot dividend"></span>
+              Dividend
             </div>
             <div
               className={"legend-item " + (showSplit ? "active" : "")}
@@ -498,6 +558,7 @@ const StockChart = function (theme) {
             </div>
           </div>
 
+          {/* Highcharts Chart */}
           <div className="chart-container">
             <HighchartsReact highcharts={Highcharts} options={options} />
           </div>

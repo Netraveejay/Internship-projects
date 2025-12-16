@@ -196,3 +196,53 @@
 .dropdown-selected .arrow.open {
   transform: rotate(180deg);
 }
+@media (max-width: 480px) {
+  .company-selector {
+    flex-direction: row;  /* stack buttons vertically */
+    gap:8px
+  }
+
+  .selector-btn {
+                /* full width */
+    font-size: 13px;
+    padding: 5px 10px;
+    gap:0px;
+  }
+
+  .dropdown-list,
+  select {
+    width: 200%;             /* dropdown fits screen */
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .chart-container {
+    height: 280px;           /* smaller chart */
+  }
+
+  .highcharts-axis-labels text,
+  .highcharts-annotation-label text {
+    font-size: 10px !important;  /* smaller labels */
+  }
+}
+@media (max-width: 480px) {
+  .legend {
+    /* stack legend items */
+    gap: 5px;
+    font-size: 12px;
+  }
+  .radar-chart-container {
+    height: 300px;
+    width:250%;
+  }
+}
+
+@media (max-width: 480px) {
+  .shimmer-box.chart,
+  .shimmer-chart {
+    height: 250px;
+  }
+
+  .shimmer-line.title { width: 60%; height: 20px; }
+  .shimmer-line.subtitle { width: 80%; height: 14px; }
+}

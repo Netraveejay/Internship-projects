@@ -287,10 +287,10 @@ body.dark .cal-tl-date {
 }
 
 .cal-tl-wrapper {
-  width: 60%;
+  width: 100%;
   max-height: 350px; 
   overflow-y: auto; 
- overflow-x:hidden;
+ overflow-x:auto;
   position: relative;
 }
 
@@ -539,6 +539,53 @@ body.dark .cals-tl-box:hover {
   box-shadow: 0 8px 22px rgba(0,0,0,0.45);
 }
 
+/* Container for the buttons */
+.timeline-filters {
+ display: flex;
+  justify-content: center; /* center buttons horizontally */
+  gap: 10px;               /* space between buttons */
+  margin: 10px 0;          /* remove large left/right margin */
+  
+ 
+}
+
+/* Default button */
+.timeline-filters button {
+  padding: 8px 16px;   /* more padding for pill shape */
+  border-radius: 50px; /* makes it fully rounded */
+  border: 1px solid #ccc;
+  background: #f3ebff;
+  color: #1d1d27;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Active button */
+.timeline-filters button.active-filter {
+  border: 2px solid #6366f1;
+  background: #6366f1;
+  color: #fff;
+}
+
+/* Responsive: tablets */
+@media (max-width: 768px) {
+  .timeline-filters button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Responsive: mobile */
+@media (max-width: 480px) {
+  .timeline-filters button {
+    padding: 5px 10px;
+    font-size: 11px;
+    left:10px;
+  }
+}
+
 
 
 .calendar-shimmer {
@@ -620,4 +667,212 @@ body.dark .calendar-shimmer-tile {
 .reload1-btn:hover {
   opacity: 0.85;
 }
+/* Mobile devices (≤480px) */
+@media (max-width: 480px) {
+  .calendar-container {
+    height: auto; 
+    padding: 6px;
+    width:200%
+  }
+
+  .calendar-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .nav-btn, .header-controls select, .header-controls button, 
+  .custom-select__button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .react-calendar__month-view__days__day {
+    height: 50px !important;
+    padding: 4px;
+  }
+
+  .calendar-shimmer {
+    min-height: 300px;
+    gap: 4px;
+  }
+
+  .cal-tl-wrapper, .fullscreen-timeline {
+    
+    padding: 20px;
+   
+  }
+
+  .cal-tl-box {
+    
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+.style{
+  display:flex;
+  gap:0px;
+}
+  .cal-tl-dot {
+    width: 12px;
+    height: 12px;
+    top: 20px;
+  }
+
+  .fullscreen-btn {
+    margin-left: auto;
+    
+    display: block;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .popup-box {
+    width: 90%;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .inline-error-box1 {
+    margin: 80px 15px;
+    padding: 15px;
+  }
+
+  .inline-error-box1 strong {
+    font-size: 14px;
+  }
+
+  .inline-error-box1 p {
+    font-size: 12px;
+  }
+
+  .reload1-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet devices (≤768px) */
+@media (max-width: 768px) {
+  .calendar-container {
+    height: auto; 
+    padding: 8px;
+  }
+
+  .calendar-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .nav-btn, .header-controls select, .header-controls button, 
+  .custom-select__button {
+    padding: 7px 12px;
+    font-size: 0.9rem;
+  }
+
+  .react-calendar__month-view__days__day {
+    height: 60px !important;
+    padding: 6px;
+  }
+
+  .calendar-shimmer {
+    min-height: 350px;
+    gap: 6px;
+  }
+
+  .cal-tl-wrapper, .fullscreen-timeline {
+    max-height:50%;
+    padding: 25px;
+  }
+
+  .cal-tl-box {
+    
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+
+  .cal-tl-dot {
+    width: 14px;
+    height: 14px;
+    top: 24px;
+  }
+
+  .popup-box {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .inline-error-box1 {
+    margin: 100px 20px;
+    padding: 18px;
+  }
+
+  .inline-error-box1 strong {
+    font-size: 15px;
+  }
+
+  .inline-error-box1 p {
+    font-size: 13px;
+  }
+
+  .reload1-btn {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
+/* Hide show-timeline button on desktop */
+.show-timeline-btn {
+  display: none;
+}
+
+/* Mobile only */
+@media (max-width: 480px) {
+  .show-timeline-btn {
+    display: block;
+  
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    
+  }
+
+  /* Mobile: hide desktop timeline */
+  .timeline-desktop {
+    display: none;
+  }
+}
+/* Hide mobile timeline button on desktop */
+.show-timeline-btn {
+  display: none;
+}
+
+/* Mobile rules */
+@media (max-width: 480px) {
+  .show-timeline-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin:0px 550px;
+    width:18%;
+  }
+
+  /* Hide inline timeline on mobile */
+  .timeline-desktop {
+    display: none;
+  }
+}
+/* Hide fullscreen timeline buttons on mobile */
+@media (max-width: 768px) {
+  .fullscreen-btn {
+    display: none !important;
+  }
+}
+
+
 
