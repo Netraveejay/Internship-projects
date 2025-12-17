@@ -9,6 +9,7 @@ import CalendarPage from "./pages/CalendarPage";
 import TimelinePage from "./pages/TimelinePage";
 import TreemapPage from "./pages/TreemapPage";
 import StockPage from "./pages/StockPage"; // ✅ added stock page
+import LiveChart from "./pages/LivePage";
 
 import ThemeToggle from "./components/calendar/ThemeToggle";
 
@@ -77,6 +78,14 @@ function App() {
           >
             Stock
           </NavLink>
+          <NavLink
+            to="/live" // ✅ added stock nav link
+            className={({ isActive }) =>
+              "navi-btn" + (isActive ? " active" : "")
+            }
+          >
+            Live
+          </NavLink>
         </div>
 
         <div className="navi-controls">
@@ -94,6 +103,8 @@ function App() {
         <Route path="/treemap" element={<TreemapPage theme={theme} />} />
         <Route path="/stock" element={<StockPage theme={theme} />} />{" "}
         {/* ✅ stock route */}
+        <Route path="/live" element={<LiveChart theme={theme} />} />{" "}
+        {/* live chart route */}
       </Routes>
     </BrowserRouter>
   );

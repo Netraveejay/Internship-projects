@@ -11,8 +11,11 @@ body.dark {
   transition: all 0.3s ease;
 }
 
-
-/*        NAV BAR        */
+@media (max-width: 480px) {
+  .navi-bar{
+  width:860px;
+  }
+}
 
 
 .navi-bar {

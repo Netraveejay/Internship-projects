@@ -1,0 +1,271 @@
+/* ===============================
+   THEME VARIABLES
+================================ */
+:root {
+  --bg: #ffffff;
+  --card-bg: #f5f5f5;
+
+  --text: #111111;
+  --btn-text: #111111;
+
+  --btn-bg: #e0e0e0;
+  --btn-active: #7b5cf5;
+
+  --border: #ddd;
+
+  /* Tooltip */
+  --tooltip-bg: #ffffff;
+  --tooltip-text: #111111;
+  --tooltip-border: #ddd;
+}
+
+/* 🌙 DARK MODE */
+.dark {
+  --bg: #0e0f14;
+  --card-bg: #1a1b22;
+
+  --text: #ffffff;
+  --btn-text: #ffffff;
+
+  --btn-bg: #222;
+  --btn-active: #7b5cf5;
+
+  --border: #333;
+
+  /* Tooltip */
+  --tooltip-bg: rgba(0, 0, 0, 0.85);
+  --tooltip-text: #ffffff;
+  --tooltip-border: #333;
+}
+
+/* ☀️ LIGHT MODE */
+.light {
+  --bg: #ffffff;
+  --card-bg: #f6f7fb;
+
+  --text: #111111;
+  --btn-text: #111111;
+
+  --btn-bg: #e4e6eb;
+  --btn-active: #7b5cf5;
+
+  --border: #ddd;
+
+  /* Tooltip */
+  --tooltip-bg: #ffffff;
+  --tooltip-text: #111111;
+  --tooltip-border: #ddd;
+}
+
+/* ===============================
+   PAGE CONTAINER
+================================ */
+.live-chart-wrapper {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+/* ===============================
+   BUTTON BAR
+================================ */
+.company-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.company-buttons button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.company-buttons button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.company-buttons button.active {
+  background: var(--btn-active);
+  color: #fff;
+  border-color: var(--btn-active);
+  box-shadow: 0 0 12px rgba(123, 92, 245, 0.6);
+}
+
+/* ===============================
+   CHART CONTAINER
+================================ */
+.chart-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 14px;
+  transition: background 0.3s ease;
+}
+
+/* ===============================
+   HIGHCHARTS TEXT FIX
+================================ */
+/* Reset all Highcharts text to flat theme colors */
+.highcharts-title,
+.highcharts-axis-title,
+.highcharts-axis-labels text,
+.highcharts-tooltip text,
+.highcharts-tooltip tspan {
+  fill: var(--text) !important;
+  stroke: none !important;
+  text-shadow: none !important;
+  font-weight: 600;
+}
+
+/* ===============================
+   HIGHCHARTS TOOLTIP FIX
+================================ */
+/* Tooltip box */
+.highcharts-tooltip-box {
+  fill: var(--tooltip-bg) !important;
+  stroke: var(--tooltip-border) !important;
+  stroke-width: 1px;
+  rx: 6;
+  ry: 6;
+}
+
+/* Tooltip text */
+.highcharts-tooltip text,
+.highcharts-tooltip tspan {
+  fill: var(--tooltip-text) !important;
+  stroke: none !important;
+  text-shadow: none !important;
+  font-weight: 600;
+}
+
+/* ===============================
+   HOVER & CROSSHAIR FIX
+================================ */
+/* Hover marker */
+.highcharts-point-hover {
+  stroke: #7b5cf5 !important;
+  stroke-width: 2px;
+}
+
+/* Crosshair line */
+.highcharts-crosshair {
+  stroke: rgba(123, 92, 245, 0.5) !important;
+  stroke-width: 1px;
+}
+
+/* ===============================
+   SCROLLBAR FIX
+================================ */
+.highcharts-scrollbar-thumb {
+  fill: lightgrey !important;
+}
+
+.highcharts-scrollbar-track {
+  fill: transparent !important;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .company-buttons {
+    justify-content: center;
+  }
+
+  .company-buttons button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .chart-card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ===============================
+     COMPANY BUTTONS
+  =============================== */
+  .company-buttons {
+      /* stack buttons vertically */
+    gap: 8px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    width:250px;
+  }
+.live-chart-wrapper{
+    width:250%;
+}
+  .company-buttons button {
+    font-size: 13px;
+    padding: 5px 10px;
+    width: 100%;              /* full-width buttons */
+  }
+
+  /* ===============================
+     CHART CONTAINER
+  =============================== */
+  .chart-card {
+    height: 280px;            /* smaller chart height for mobile */
+  }
+
+  .highcharts-axis-labels text,
+  .highcharts-annotation-label text {
+    font-size: 10px !important; /* smaller labels */
+  }
+
+  /* ===============================
+     SHIMMER / LOADING PLACEHOLDER
+  =============================== */
+  .chart-shimmer {
+    height: 250px;
+  }
+
+  .shimmer-line.title {
+    width: 60%;
+    height: 20px;
+  }
+
+  .shimmer-line.subtitle {
+    width: 80%;
+    height: 14px;
+  }
+}
+
+/* Shimmer placeholder */
+.chart-shimmer {
+  width: 100%;
+  height: 400px; /* same as chart height */
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.1) 25%,
+    rgba(200, 200, 200, 0.2) 50%,
+    rgba(200, 200, 200, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
