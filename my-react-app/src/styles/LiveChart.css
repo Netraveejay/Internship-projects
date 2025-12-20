@@ -104,6 +104,7 @@
 /* ===============================
    CHART CONTAINER
 ================================ */
+
 .chart-card {
   background: var(--card-bg);
   border-radius: 16px;
@@ -120,7 +121,7 @@
 .highcharts-axis-labels text,
 .highcharts-tooltip text,
 .highcharts-tooltip tspan {
-  fill: var(--text) !important;
+ 
   stroke: none !important;
   text-shadow: none !important;
   font-weight: 600;

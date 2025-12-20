@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Order {
+  double price = 1;
+  double quantity = 2;
+}
+
+message OrderBook {
+  repeated Order bids = 1;
+  repeated Order asks = 2;
+}

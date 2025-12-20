@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Company {
+  string code = 1;
+  double price = 2;
+}
+
+message CompanyList {
+  repeated Company companies = 1;
+}
